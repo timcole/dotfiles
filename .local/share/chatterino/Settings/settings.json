@@ -1,0 +1,139 @@
+{
+    "misc": {
+        "startUpNotification": 1,
+        "currentVersion": "2.0.4"
+    },
+    "accounts": {
+        "current": "modesttim",
+        "uid44246256": {
+            "username": "socialbladegaming",
+            "userID": "44246256",
+            "clientID": "(radacted)",
+            "oauthToken": "(radacted)"
+        },
+        "uid7452653": {
+            "username": "socialblade",
+            "userID": "7452653",
+            "clientID": "(radacted)",
+            "oauthToken": "(radacted)"
+        },
+        "uid88560344": {
+            "username": "weetbot",
+            "userID": "88560344",
+            "clientID": "(radacted)",
+            "oauthToken": "(radacted)"
+        },
+        "uid51684790": {
+            "username": "modesttim",
+            "userID": "51684790",
+            "clientID": "(radacted)",
+            "oauthToken": "(radacted)"
+        }
+    },
+    "appearance": {
+        "theme": {
+            "name": "Dark"
+        },
+        "uiScale": 0,
+        "showTabCloseButton": false,
+        "hidePreferencesButton": false,
+        "hideUserButton": false,
+        "showEmptyInputBox": true,
+        "messages": {
+            "showMessageLength": true,
+            "timestampFormat": "HH:mm:ss",
+            "boldUsernames": true,
+            "alternateMessageBackground": true,
+            "separateMessages": true,
+            "showLastMessageIndicator": false,
+            "greyOutHistoricMessages": false
+        },
+        "currentFontFamily": "Dank Mono",
+        "currentFontSize": 12,
+        "boldScale": 50,
+        "enableAnimationsWhenFocused": false,
+        "splitheader": {
+            "showUptime": true,
+            "showViewerCount": true,
+            "showGame": false,
+            "showTitle": false
+        },
+        "smoothScrolling": false,
+        "smoothScrollingNewMessages": true,
+        "showTabLiveButton": true,
+        "uiScale2": 1.0
+    },
+    "emotes": {
+        "scale": 1.0,
+        "emojiSet": "Twitter"
+    },
+    "behaviour": {
+        "showJoins": false,
+        "showParts": false,
+        "pauseChatHover": true,
+        "autocompletion": {
+            "smallStreamerLimit": 100
+        }
+    },
+    "links": {
+        "doubleClickToOpen": false,
+        "linkInfoTooltip": true
+    },
+    "whispers": {
+        "enableInlineWhispers": false
+    },
+    "highlighting": {
+        "whisperHighlight": {
+            "enableTaskbarFlashing": false,
+            "enableSound": true
+        },
+        "selfHighlight": {
+            "enableSound": true,
+            "enableTaskbarFlashing": false
+        },
+        "highlights": [
+            {
+                "pattern": "socialblade",
+                "alert": false,
+                "sound": true,
+                "regex": false
+            },
+            {
+                "pattern": "Social Blade",
+                "alert": false,
+                "sound": true,
+                "regex": false
+            }
+        ],
+        "blacklist": [
+            {
+                "pattern": "fossabot",
+                "regex": false
+            }
+        ]
+    },
+    "moderation": {
+        "actions": [
+            {
+                "pattern": "/timeout {user}"
+            },
+            {
+                "pattern": "/ban {user}"
+            },
+            {
+                "pattern": "/timeout {user} 1"
+            }
+        ]
+    },
+    "notifications": {
+        "twitch": []
+    },
+    "logging": {
+        "enabled": true
+    },
+    "external": {
+        "streamlink": {
+            "quality": "Source"
+        }
+    }
+}

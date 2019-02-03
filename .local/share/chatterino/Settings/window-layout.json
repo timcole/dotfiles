@@ -1,0 +1,639 @@
+{
+    "windows": [
+        {
+            "height": 1046,
+            "tabs": [
+                {
+                    "highlightsEnabled": true,
+                    "selected": true,
+                    "splits2": {
+                        "items": [
+                            {
+                                "data": {
+                                    "name": "modesttim",
+                                    "type": "twitch"
+                                },
+                                "flexh": 1,
+                                "flexv": 1.2188112344872633,
+                                "type": "split"
+                            },
+                            {
+                                "data": {
+                                    "type": "mentions"
+                                },
+                                "flexh": 1,
+                                "flexv": 0.7811887655127369,
+                                "type": "split"
+                            }
+                        ],
+                        "type": "vertical"
+                    },
+                    "title": "mine"
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "items": [
+                            {
+                                "items": [
+                                    {
+                                        "data": {
+                                            "name": "twitch",
+                                            "type": "twitch"
+                                        },
+                                        "flexh": 1,
+                                        "flexv": 1,
+                                        "type": "split"
+                                    },
+                                    {
+                                        "data": {
+                                            "name": "creatorcamp",
+                                            "type": "twitch"
+                                        },
+                                        "flexh": 1,
+                                        "flexv": 1,
+                                        "type": "split"
+                                    }
+                                ],
+                                "type": "vertical"
+                            },
+                            {
+                                "items": [
+                                    {
+                                        "data": {
+                                            "name": "twitchconesportsstage",
+                                            "type": "twitch"
+                                        },
+                                        "flexh": 1,
+                                        "flexv": 1,
+                                        "type": "split"
+                                    },
+                                    {
+                                        "data": {
+                                            "name": "twitchconcharitystage",
+                                            "type": "twitch"
+                                        },
+                                        "flexh": 1,
+                                        "flexv": 1,
+                                        "type": "split"
+                                    },
+                                    {
+                                        "data": {
+                                            "name": "twitchcongiveplz",
+                                            "type": "twitch"
+                                        },
+                                        "flexh": 1,
+                                        "flexv": 1,
+                                        "type": "split"
+                                    }
+                                ],
+                                "type": "vertical"
+                            },
+                            {
+                                "items": [
+                                    {
+                                        "data": {
+                                            "name": "twitchconfrankerz",
+                                            "type": "twitch"
+                                        },
+                                        "flexh": 1,
+                                        "flexv": 1,
+                                        "type": "split"
+                                    },
+                                    {
+                                        "data": {
+                                            "name": "twitchconpjsugar",
+                                            "type": "twitch"
+                                        },
+                                        "flexh": 1,
+                                        "flexv": 1,
+                                        "type": "split"
+                                    },
+                                    {
+                                        "data": {
+                                            "name": "twitchconcoolcat",
+                                            "type": "twitch"
+                                        },
+                                        "flexh": 1,
+                                        "flexv": 1,
+                                        "type": "split"
+                                    },
+                                    {
+                                        "data": {
+                                            "name": "twitchconheyguys",
+                                            "type": "twitch"
+                                        },
+                                        "flexh": 1,
+                                        "flexv": 1,
+                                        "type": "split"
+                                    }
+                                ],
+                                "type": "vertical"
+                            },
+                            {
+                                "items": [
+                                    {
+                                        "data": {
+                                            "name": "twitchdev",
+                                            "type": "twitch"
+                                        },
+                                        "flexh": 1,
+                                        "flexv": 1,
+                                        "type": "split"
+                                    },
+                                    {
+                                        "data": {
+                                            "name": "twitchconcharitystage",
+                                            "type": "twitch"
+                                        },
+                                        "flexh": 1,
+                                        "flexv": 1,
+                                        "type": "split"
+                                    }
+                                ],
+                                "type": "vertical"
+                            }
+                        ],
+                        "type": "horizontal"
+                    },
+                    "title": "twitchcon"
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "pajlada",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "aidenwallis",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "loserfruit",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "heyma",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "true_schu",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "items": [
+                            {
+                                "data": {
+                                    "name": "elisederpp",
+                                    "type": "twitch"
+                                },
+                                "flexh": 1,
+                                "flexv": 1,
+                                "type": "split"
+                            },
+                            {
+                                "data": {
+                                    "name": "baileym",
+                                    "type": "twitch"
+                                },
+                                "flexh": 1,
+                                "flexv": 1,
+                                "type": "split"
+                            }
+                        ],
+                        "type": "horizontal"
+                    },
+                    "title": "elise gang"
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "dinu",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "fossabot",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "giantwaffle",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "pokelawls",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "fuslie",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "edisonparklive",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "twitchdev",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "bluelava",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "mauerbac",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "angelskimi",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "sodapoppin",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "shroud",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "infinitegachi",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "bnans",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "burgermeat72",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "fedmyster",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "sudokid",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "jamiepinelive",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "pixelogicdev",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "codephobia",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "gggibi",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "annemunition",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "sodapoppin",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "jamie254",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "funfunfunction",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "pokimane",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "quarterjade",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "aidendoesthings",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "elowly_",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "weetbot",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "mrdemonwolf",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "sleightlymusical",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
+                }
+            ],
+            "type": "main",
+            "width": 753,
+            "x": 1807,
+            "y": 0
+        }
+    ]
+}

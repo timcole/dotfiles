@@ -1,0 +1,122 @@
+// Place your settings in this file to overwrite the default settings
+{
+	"editor.tabSize": 4,
+	"editor.insertSpaces": false,
+	"editor.wordWrap": "off",
+	"editor.fontFamily": "Dank Mono",
+	"editor.fontLigatures": true,
+	"editor.renderWhitespace": "all",
+	"workbench.colorCustomizations": {
+		"[One Dark Pro]": {
+			"tab.activeBackground": "#202731",
+			"tab.inactiveBackground": "#1C222B",
+			"activityBar.background": "#202731",
+			"editorGroup.background": "#202731",
+			"statusBar.background": "#1C222B",
+			"sideBar.background": "#1C222B",
+			"editor.background": "#202731",
+			"editorGroupHeader.tabsBackground": "#1C222B",
+			"input.border": "#202731",
+			"sideBarSectionHeader.background": "#202731",
+			"input.background": "#1C222B",
+			"editorIndentGuide.activeBackground": "#3B4048"
+		}
+	},
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			{
+				"name": "go operator",
+				"scope": [
+					"keyword.operator.assignment.go",
+					"keyword.operator.address.go"
+				],
+				"settings": {
+					"foreground": "#A6B2C0"
+				}
+			}	
+		]
+	},
+	"editor.tabCompletion": true,
+	"editor.lineHeight": 25,
+	"editor.letterSpacing": 0.3,
+	"editor.minimap.maxColumn": 175,
+	"editor.codeLens": false,
+	"window.title": "${dirty}${activeEditorMedium}${separator}${appName}",
+	"window.menuBarVisibility": "toggle",
+	"extensions.ignoreRecommendations": true,
+	"files.exclude": {
+		"**/.git": true,
+		"**/.DS_Store": true,
+		"**/*.meta": true,
+		"**/*.*.meta": true,
+		"**/*.unity": true,
+		"**/*.unityproj": true,
+		"**/*.mat": true,
+		"**/*.fbx": true,
+		"**/*.FBX": true,
+		"**/*.tga": true,
+		"**/*.cubemap": true,
+		"**/*.prefab": true,
+		"**/Library": true,
+		"**/ProjectSettings": true,
+		"**/Temp": true
+	},
+	"atomKeymap.promptV3Features": true,
+	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.formatOnPaste": true,
+	"terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\bash.exe",
+	"workbench.panel.defaultLocation": "bottom",
+	"window.zoomLevel": 0,
+	"terminal.integrated.cursorBlinking": true,
+	"terminal.integrated.fontWeightBold": "400",
+	"window.restoreWindows": "none",
+	"workbench.startupEditor": "newUntitledFile",
+	"editor.lineNumbers": "relative",
+	"php.suggest.basic": false,
+	"terminal.integrated.copyOnSelection": true,
+	"files.eol": "\n",
+	"git.enableCommitSigning": true,
+	"git.enableSmartCommit": true,
+	"workbench.activityBar.visible": true,
+	"typescript.suggestionActions.enabled": false,
+	"javascript.suggestionActions.enabled": false,
+	"todohighlight.keywords": [
+		{
+			"text": "FIXME:",
+			"backgroundColor": "#b3382c"
+		},
+		{
+			"text": "TODO:",
+			"backgroundColor": "#c4a725",
+		},
+		{
+			"text": "NOTE:",
+			"backgroundColor": "#308BCD",
+			"color": "#ffffff"
+		}
+	],
+	"git.autofetch": true,
+	"vs-kubernetes": {
+		"vs-kubernetes.helm-path": "/home/tim/.vs-kubernetes/tools/helm/linux-amd64/helm",
+		"vs-kubernetes.draft-path": "/home/tim/.vs-kubernetes/tools/draft/linux-amd64/draft",
+		"vs-kubernetes.minikube-path": "/home/tim/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
+	},
+	"liveshare.guestApprovalRequired": true,
+	"liveshare.focusBehavior": "prompt",
+	"typescript.preferences.quoteStyle": "double",
+	"javascript.preferences.quoteStyle": "double",
+	"typescript.format.insertSpaceAfterConstructor": true,
+	"workbench.colorTheme": "One Dark Pro",
+	"breadcrumbs.enabled": true,
+	"liveServer.settings.donotShowInfoMsg": true,
+	"window.titleBarStyle": "native",
+	"todohighlight.isEnable": true,
+	"zenMode.centerLayout": false,
+	"search.exclude": {
+		"**/vendor": true
+	},
+	"search.showLineNumbers": true,
+	"search.location": "panel",
+	"search.useGlobalIgnoreFiles": true,
+	"terminal.integrated.confirmOnExit": true
+}

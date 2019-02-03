@@ -1,0 +1,13 @@
+[user]
+	email = tim@timcole.me
+	name = Timothy Cole
+	signingkey = 04F367E288608143
+[alias]
+	st = status
+	branch = "!f() { git rev-parse --abbrev-ref HEAD; }; f"
+[commit]
+	gpgsign = true
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+# [hub]
+# 	host = git-aws.internal.justin.tv
