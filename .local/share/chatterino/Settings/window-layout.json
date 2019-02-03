@@ -628,6 +628,18 @@
                         "flexv": 1,
                         "type": "split"
                     }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "offlinetv",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
                 }
             ],
             "type": "main",
