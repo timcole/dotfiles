@@ -5,7 +5,6 @@
             "tabs": [
                 {
                     "highlightsEnabled": true,
-                    "selected": true,
                     "splits2": {
                         "items": [
                             {
@@ -640,11 +639,24 @@
                         "flexv": 1,
                         "type": "split"
                     }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "selected": true,
+                    "splits2": {
+                        "data": {
+                            "name": "orb",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
                 }
             ],
             "type": "main",
-            "width": 753,
-            "x": 1807,
+            "width": 771,
+            "x": 1789,
             "y": 0
         }
     ]
