@@ -118,5 +118,6 @@
 	"search.showLineNumbers": true,
 	"search.location": "panel",
 	"search.useGlobalIgnoreFiles": true,
-	"terminal.integrated.confirmOnExit": true
+	"terminal.integrated.confirmOnExit": true,
+	"zenMode.hideLineNumbers": false
 }
