@@ -133,7 +133,7 @@
     },
     "external": {
         "streamlink": {
-            "quality": "Source"
+            "quality": "Choose"
         }
     }
 }

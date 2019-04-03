@@ -33,6 +33,7 @@ alias dk="docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs docker rm"
 alias twitch-dashboard="nohup google-chrome-stable --app=https://www.twitch.tv/modesttim/dashboard/live &"
 alias twitter="nohup google-chrome-stable --app=https://tweetdeck.twitter.com/ &"
 alias streamlabs="nohup google-chrome-stable --app=https://streamlabs.com/dashboard/recent-events &"
+alias nda="nohup google-chrome-stable --app=https://timcole.me/nda#chat &"
 
 # Load our secret env vars
 source ~/.zsh_secrets

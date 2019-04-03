@@ -119,5 +119,8 @@
 	"search.location": "panel",
 	"search.useGlobalIgnoreFiles": true,
 	"terminal.integrated.confirmOnExit": true,
-	"zenMode.hideLineNumbers": false
+	"zenMode.hideLineNumbers": false,
+	"workbench.list.keyboardNavigation": "filter",
+	"editor.minimap.enabled": true,
+	"liveshare.featureSet": "insiders"
 }

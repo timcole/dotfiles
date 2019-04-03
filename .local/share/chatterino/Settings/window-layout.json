@@ -1,10 +1,11 @@
 {
     "windows": [
         {
-            "height": 1046,
+            "height": 1034,
             "tabs": [
                 {
                     "highlightsEnabled": true,
+                    "selected": true,
                     "splits2": {
                         "items": [
                             {
@@ -13,7 +14,7 @@
                                     "type": "twitch"
                                 },
                                 "flexh": 1,
-                                "flexv": 1.2188112344872633,
+                                "flexv": 1,
                                 "type": "split"
                             },
                             {
@@ -21,7 +22,7 @@
                                     "type": "mentions"
                                 },
                                 "flexh": 1,
-                                "flexv": 0.7811887655127369,
+                                "flexv": 1,
                                 "type": "split"
                             }
                         ],
@@ -30,7 +31,7 @@
                     "title": "mine"
                 },
                 {
-                    "highlightsEnabled": true,
+                    "highlightsEnabled": false,
                     "splits2": {
                         "items": [
                             {
@@ -198,18 +199,6 @@
                     "splits2": {
                         "data": {
                             "name": "heyma",
-                            "type": "twitch"
-                        },
-                        "flexh": 1,
-                        "flexv": 1,
-                        "type": "split"
-                    }
-                },
-                {
-                    "highlightsEnabled": true,
-                    "splits2": {
-                        "data": {
-                            "name": "true_schu",
                             "type": "twitch"
                         },
                         "flexh": 1,
@@ -428,18 +417,6 @@
                     "highlightsEnabled": true,
                     "splits2": {
                         "data": {
-                            "name": "fedmyster",
-                            "type": "twitch"
-                        },
-                        "flexh": 1,
-                        "flexv": 1,
-                        "type": "split"
-                    }
-                },
-                {
-                    "highlightsEnabled": true,
-                    "splits2": {
-                        "data": {
                             "name": "sudokid",
                             "type": "twitch"
                         },
@@ -512,18 +489,6 @@
                     "highlightsEnabled": true,
                     "splits2": {
                         "data": {
-                            "name": "sodapoppin",
-                            "type": "twitch"
-                        },
-                        "flexh": 1,
-                        "flexv": 1,
-                        "type": "split"
-                    }
-                },
-                {
-                    "highlightsEnabled": true,
-                    "splits2": {
-                        "data": {
                             "name": "jamie254",
                             "type": "twitch"
                         },
@@ -560,31 +525,7 @@
                     "highlightsEnabled": true,
                     "splits2": {
                         "data": {
-                            "name": "quarterjade",
-                            "type": "twitch"
-                        },
-                        "flexh": 1,
-                        "flexv": 1,
-                        "type": "split"
-                    }
-                },
-                {
-                    "highlightsEnabled": true,
-                    "splits2": {
-                        "data": {
                             "name": "aidendoesthings",
-                            "type": "twitch"
-                        },
-                        "flexh": 1,
-                        "flexv": 1,
-                        "type": "split"
-                    }
-                },
-                {
-                    "highlightsEnabled": true,
-                    "splits2": {
-                        "data": {
-                            "name": "elowly_",
                             "type": "twitch"
                         },
                         "flexh": 1,
@@ -642,7 +583,6 @@
                 },
                 {
                     "highlightsEnabled": true,
-                    "selected": true,
                     "splits2": {
                         "data": {
                             "name": "orb",
@@ -652,12 +592,24 @@
                         "flexv": 1,
                         "type": "split"
                     }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "kestalkayden",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "type": "split"
+                    }
                 }
             ],
             "type": "main",
-            "width": 771,
-            "x": 1789,
-            "y": 0
+            "width": 790,
+            "x": 1766,
+            "y": 44
         }
     ]
 }
