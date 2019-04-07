@@ -162,7 +162,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Auto start
-exec --no-startup-id $HOME/.config/i3/polybar
+exec_always --no-startup-id $HOME/.config/i3/polybar
 exec --no-startup-id google-chrome-stable --app=https://tweetdeck.twitter.com/ &
 exec --no-startup-id discord &
 exec --no-startup-id slack &
