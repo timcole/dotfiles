@@ -30,7 +30,7 @@ wget -O ~/.vim/colors/onedark.vim https://raw.githubusercontent.com/joshdick/one
 wget -O ~/.vim/autoload/airline/themes/onedark.vim https://raw.githubusercontent.com/joshdick/onedark.vim/master/autoload/airline/themes/onedark.vim
 
 echo "Installing VSCode"
-yaourt -S code-git
+yay -S visual-studio-code-bin
 
 echo "Installing VSCode Extensions"
 code --install-extension dbaeumer.vscode-eslint

@@ -15,7 +15,7 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='vim'
 
 # Golang
-export GOROOT=/usr/local/go
+# export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 
 export GEMPATH=$HOME/.gem/ruby/2.6.0
@@ -40,3 +40,5 @@ source ~/.zsh_secrets
 
 # added by travis gem
 [ -f /home/tim/.travis/travis.sh ] && source /home/tim/.travis/travis.sh
+
+export TERM=xterm-256color
