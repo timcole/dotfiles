@@ -15,8 +15,8 @@ bindsym $mod+Shift+c kill
 bindsym $mod+d exec dmenu_run
 
 # Screenshot
-bindsym Print exec gnome-screenshot -w -p
-bindsym Shift+Print exec --no-startup-id gnome-screenshot -a
+bindsym Print exec --no-startup-id scrot -q 100 -u -b ~/Pictures/cdn.tcole.me/$(openssl rand -hex 6).png
+bindsym Ctrl+Print exec scrot -q 100 -s ~/Pictures/cdn.tcole.me/$(openssl rand -hex 6).png
 
 # change focus
 bindsym $mod+j focus left
@@ -169,3 +169,4 @@ exec --no-startup-id slack &
 exec --no-startup-id feh --bg-fill /home/tim/Pictures/Wallpapers/41ad3385u3f01.jpg &
 exec --no-startup-id ~/Documents/chatterino2/build/bin/chatterino &
 exec --no-startup-id $HOME/cdn-uploader
+exec --no-startup-id dunst

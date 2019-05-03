@@ -38,7 +38,6 @@
 	},
 	"editor.tabCompletion": true,
 	"editor.lineHeight": 25,
-	"editor.letterSpacing": 0.3,
 	"editor.minimap.maxColumn": 175,
 	"editor.codeLens": false,
 	"window.title": "${dirty}${activeEditorMedium}${separator}${appName}",
@@ -77,7 +76,7 @@
 	"files.eol": "\n",
 	"git.enableCommitSigning": true,
 	"git.enableSmartCommit": true,
-	"workbench.activityBar.visible": true,
+	"workbench.activityBar.visible": false,
 	"typescript.suggestionActions.enabled": false,
 	"javascript.suggestionActions.enabled": false,
 	"todohighlight.keywords": [
@@ -99,7 +98,8 @@
 	"vs-kubernetes": {
 		"vs-kubernetes.helm-path": "/home/tim/.vs-kubernetes/tools/helm/linux-amd64/helm",
 		"vs-kubernetes.draft-path": "/home/tim/.vs-kubernetes/tools/draft/linux-amd64/draft",
-		"vs-kubernetes.minikube-path": "/home/tim/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
+		"vs-kubernetes.minikube-path": "/home/tim/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
+		"vs-kubernetes.kubectl-path": "/home/tim/.vs-kubernetes/tools/kubectl/kubectl"
 	},
 	"liveshare.guestApprovalRequired": true,
 	"liveshare.focusBehavior": "prompt",
@@ -107,9 +107,7 @@
 	"javascript.preferences.quoteStyle": "double",
 	"typescript.format.insertSpaceAfterConstructor": true,
 	"workbench.colorTheme": "One Dark Pro",
-	"breadcrumbs.enabled": true,
 	"liveServer.settings.donotShowInfoMsg": true,
-	"window.titleBarStyle": "native",
 	"todohighlight.isEnable": true,
 	"zenMode.centerLayout": false,
 	"search.exclude": {
@@ -121,6 +119,16 @@
 	"terminal.integrated.confirmOnExit": true,
 	"zenMode.hideLineNumbers": false,
 	"workbench.list.keyboardNavigation": "filter",
-	"editor.minimap.enabled": true,
-	"liveshare.featureSet": "insiders"
+	"editor.minimap.enabled": false,
+	"liveshare.featureSet": "insiders",
+	"editor.cursorStyle": "block",
+	"terminal.explorerKind": "external",
+	"editor.hover.sticky": false,
+	"editor.letterSpacing": 0.3,
+	"editor.lightbulb.enabled": false,
+	"workbench.tips.enabled": false,
+	"workbench.editor.openPositioning": "last",
+	"workbench.editor.showTabs": false,
+	"breadcrumbs.enabled": true,
+	"workbench.tree.indent": 14
 }

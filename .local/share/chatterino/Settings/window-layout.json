@@ -5,7 +5,6 @@
             "tabs": [
                 {
                     "highlightsEnabled": true,
-                    "selected": true,
                     "splits2": {
                         "items": [
                             {
@@ -15,15 +14,31 @@
                                 },
                                 "flexh": 1,
                                 "flexv": 1,
+                                "moderationMode": false,
                                 "type": "split"
                             },
                             {
-                                "data": {
-                                    "type": "mentions"
-                                },
-                                "flexh": 1,
-                                "flexv": 1,
-                                "type": "split"
+                                "items": [
+                                    {
+                                        "data": {
+                                            "type": "mentions"
+                                        },
+                                        "flexh": 1,
+                                        "flexv": 1,
+                                        "moderationMode": false,
+                                        "type": "split"
+                                    },
+                                    {
+                                        "data": {
+                                            "type": "whispers"
+                                        },
+                                        "flexh": 1,
+                                        "flexv": 1,
+                                        "moderationMode": false,
+                                        "type": "split"
+                                    }
+                                ],
+                                "type": "horizontal"
                             }
                         ],
                         "type": "vertical"
@@ -43,6 +58,7 @@
                                         },
                                         "flexh": 1,
                                         "flexv": 1,
+                                        "moderationMode": false,
                                         "type": "split"
                                     },
                                     {
@@ -52,6 +68,7 @@
                                         },
                                         "flexh": 1,
                                         "flexv": 1,
+                                        "moderationMode": false,
                                         "type": "split"
                                     }
                                 ],
@@ -66,6 +83,7 @@
                                         },
                                         "flexh": 1,
                                         "flexv": 1,
+                                        "moderationMode": false,
                                         "type": "split"
                                     },
                                     {
@@ -75,6 +93,7 @@
                                         },
                                         "flexh": 1,
                                         "flexv": 1,
+                                        "moderationMode": false,
                                         "type": "split"
                                     },
                                     {
@@ -84,6 +103,7 @@
                                         },
                                         "flexh": 1,
                                         "flexv": 1,
+                                        "moderationMode": false,
                                         "type": "split"
                                     }
                                 ],
@@ -98,6 +118,7 @@
                                         },
                                         "flexh": 1,
                                         "flexv": 1,
+                                        "moderationMode": false,
                                         "type": "split"
                                     },
                                     {
@@ -107,6 +128,7 @@
                                         },
                                         "flexh": 1,
                                         "flexv": 1,
+                                        "moderationMode": false,
                                         "type": "split"
                                     },
                                     {
@@ -116,6 +138,7 @@
                                         },
                                         "flexh": 1,
                                         "flexv": 1,
+                                        "moderationMode": false,
                                         "type": "split"
                                     },
                                     {
@@ -125,6 +148,7 @@
                                         },
                                         "flexh": 1,
                                         "flexv": 1,
+                                        "moderationMode": false,
                                         "type": "split"
                                     }
                                 ],
@@ -139,6 +163,7 @@
                                         },
                                         "flexh": 1,
                                         "flexv": 1,
+                                        "moderationMode": false,
                                         "type": "split"
                                     },
                                     {
@@ -148,6 +173,7 @@
                                         },
                                         "flexh": 1,
                                         "flexv": 1,
+                                        "moderationMode": false,
                                         "type": "split"
                                     }
                                 ],
@@ -167,6 +193,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -179,6 +206,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -191,6 +219,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -203,6 +232,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -217,6 +247,7 @@
                                 },
                                 "flexh": 1,
                                 "flexv": 1,
+                                "moderationMode": false,
                                 "type": "split"
                             },
                             {
@@ -226,6 +257,7 @@
                                 },
                                 "flexh": 1,
                                 "flexv": 1,
+                                "moderationMode": false,
                                 "type": "split"
                             }
                         ],
@@ -242,6 +274,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -254,6 +287,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -266,6 +300,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -278,6 +313,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -290,6 +326,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -302,6 +339,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -314,6 +352,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -326,6 +365,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -338,6 +378,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -350,6 +391,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -362,6 +404,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -374,6 +417,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -386,6 +430,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -398,6 +443,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -410,6 +456,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -422,6 +469,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -434,6 +482,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -446,6 +495,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -458,6 +508,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -470,6 +521,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -482,6 +534,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -494,6 +547,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -506,6 +560,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -518,6 +573,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -530,6 +586,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -542,6 +599,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -554,6 +612,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -566,6 +625,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -578,6 +638,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -590,6 +651,7 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 },
@@ -602,13 +664,41 @@
                         },
                         "flexh": 1,
                         "flexv": 1,
+                        "moderationMode": false,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "splits2": {
+                        "data": {
+                            "name": "taylorishere",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "moderationMode": false,
+                        "type": "split"
+                    }
+                },
+                {
+                    "highlightsEnabled": true,
+                    "selected": true,
+                    "splits2": {
+                        "data": {
+                            "name": "fletchercodes",
+                            "type": "twitch"
+                        },
+                        "flexh": 1,
+                        "flexv": 1,
+                        "moderationMode": false,
                         "type": "split"
                     }
                 }
             ],
             "type": "main",
-            "width": 790,
-            "x": 1766,
+            "width": 712,
+            "x": 1844,
             "y": 44
         }
     ]
