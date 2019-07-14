@@ -1,7 +1,7 @@
 [user]
 	email = tim@timcole.me
 	name = Timothy Cole
-	signingkey = 04F367E288608143
+	signingkey = 85EDCE1ADA9AB4A3
 [alias]
 	st = status
 	branch = "!f() { git rev-parse --abbrev-ref HEAD; }; f"

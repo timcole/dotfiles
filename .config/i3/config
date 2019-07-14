@@ -9,14 +9,13 @@ bindsym $mod+Return exec termite
 
 # kill focused window
 bindsym $mod+Shift+q kill
-bindsym $mod+Shift+c kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec dmenu_run -l 6 -fn "dank mono" -nb "#1F2128" -sb "#383c4a" -p Open
 
 # Screenshot
 bindsym Print exec --no-startup-id scrot -q 100 -u -b ~/Pictures/cdn.tcole.me/$(openssl rand -hex 6).png
-bindsym Ctrl+Print exec scrot -q 100 -s ~/Pictures/cdn.tcole.me/$(openssl rand -hex 6).png
+bindsym Ctrl+Print exec --no-startup-id maim -s ~/Pictures/cdn.tcole.me/$(openssl rand -hex 6).png
 
 # change focus
 bindsym $mod+j focus left
@@ -167,6 +166,6 @@ exec --no-startup-id google-chrome-stable --app=https://tweetdeck.twitter.com/ &
 exec --no-startup-id discord &
 exec --no-startup-id slack &
 exec --no-startup-id feh --bg-fill /home/tim/Pictures/Wallpapers/41ad3385u3f01.jpg &
-exec --no-startup-id ~/Documents/chatterino2/build/bin/chatterino &
+exec --no-startup-id chatterino &
 exec --no-startup-id $HOME/cdn-uploader
 exec --no-startup-id dunst

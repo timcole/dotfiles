@@ -123,12 +123,12 @@
 	"liveshare.featureSet": "insiders",
 	"editor.cursorStyle": "block",
 	"terminal.explorerKind": "external",
-	"editor.hover.sticky": false,
 	"editor.letterSpacing": 0.3,
 	"editor.lightbulb.enabled": false,
 	"workbench.tips.enabled": false,
 	"workbench.editor.openPositioning": "last",
 	"workbench.editor.showTabs": false,
 	"breadcrumbs.enabled": true,
-	"workbench.tree.indent": 14
+	"workbench.tree.indent": 14,
+	"remote.SSH.showLoginTerminal": true
 }

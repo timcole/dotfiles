@@ -1,46 +1,30 @@
 [colors]
-background-alt = #252831
-background = #2b2e39
+background = #1F2128
 foreground = #dfebf5
-foreground-alt = #7f848e
-primary = #1b7fe6
-secondary = #e60053
-alert = #bd2c40
 
 [bar/example]
 monitor = ${env:MONITOR:}
 width = 100%
 height = 26
-radius = 0.0
 fixed-center = true
+wm-name = i3
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 2
-line-color = #f00
-
-border-size = 0
-border-color = #00000000
-
-padding-left = 0
-padding-right = 0
-
 font-0 = "fixed:size=10;2"
 font-1 = "UbuntuMono Nerd Font:size=22;4"
-font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=10;1"
-font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=10;1"
-font-4 = "Font Awesome 5 Brands:pixelsize=10;1"
+font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=10;2"
+font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=10;2"
 
-modules-left = i3
-modules-center = arrowclock1 date arrowclock2
-modules-right = arrow1 networkup networkdown arrow2 memory cpu arrow3 volume arrow4 powermenu
+modules-left = powermenu i3
+modules-right = networkup networkdown volume date
 
 tray-position = right
-tray-padding = 0
+tray-padding = 2
 tray-detached = false
-tray-maxsize = 20
-tray-background = ${colors.background-alt}
+tray-maxsize = 18
+tray-background = #323642
 tray-offset-x = 0
 tray-offset-y = 0
 tray-scale = 1.0
@@ -51,153 +35,76 @@ cursor-scroll = ns-resize
 [module/i3]
 type = internal/i3
 format = <label-state> <label-mode>
-format-suffix = %{T2} %{T-}
-format-suffix-font = 2
-format-suffix-foreground = ${colors.background-alt}
-format-suffix-background = ${colors.background}
 index-sort = true
 wrapping-scroll = false
+format-padding = 1
+format-background = #383c4a
+format-foreground = ${colors.foreground}
 
-label-mode-padding = 2
-label-mode-foreground = ${colors.foreground}
-label-mode-background = ${colors.background-alt}
+label-mode = ""
+label-mode-font = 4
+label-mode-padding = 3
+label-mode-background = #404552
 
 ; focused = Active workspace on focused monitor
-label-focused = "%index%"
-label-focused-padding = 2
-label-focused-background = ${colors.background-alt}
-label-focused-foreground = ${colors.foreground}
-label-focused-underline = ${colors.foreground-alt}
+label-focused = ""
+label-focused-font = 4
+label-focused-padding = 1
 
 ; unfocused = Inactive workspace on any monitor
-label-unfocused = %index%
-label-unfocused-padding = 2
-label-unfocused-background = ${colors.background-alt}
-label-unfocused-foreground = ${colors.foreground}
+label-unfocused = 
+label-unfocused-font = 3
+label-unfocused-padding = 1
 
 ; visible = Active workspace on unfocused monitor
-label-visible = %index%
-label-visible-background = ${self.label-focused-background}
+label-visible = ""
+label-visible-font = 4
 label-visible-padding = ${self.label-focused-padding}
-label-visible-foreground = ${colors.foreground}
-label-visible-underline = ${colors.foreground-alt}
 
 ; urgent = Workspace with urgency hint set
-label-urgent = %index%
-label-urgent-background = #e06c75
-label-urgent-padding = 2
-
-[module/arrow1]
-type = custom/text
-content = "%{T2} %{T-}"
-content-font = 2
-content-foreground = ${colors.background-alt}
-
-[module/arrow2]
-type = custom/text
-content = "%{T2} %{T-}"
-content-font = 2
-content-foreground = ${colors.background}
-content-background = ${colors.background-alt}
-
-[module/arrow3]
-type = custom/text
-content = "%{T2} %{T-}"
-content-font = 2
-content-foreground = ${colors.background-alt}
-content-background = ${colors.background}
-
-[module/arrow4]
-type = custom/text
-content = "%{T2} %{T-}"
-content-font = 2
-content-foreground = ${colors.background-alt}
-content-background = ${colors.background-alt}
-
-[module/arrowclock1]
-type = custom/text
-content = "%{T2} %{T-}"
-content-font = 2
-content-foreground = ${colors.background-alt}
-content-background = ${colors.background}
-
-[module/arrowclock2]
-type = custom/text
-content = "%{T2} %{T-}"
-content-font = 2
-content-foreground = ${colors.background-alt}
-content-background = ${colors.background}
-
-[module/cpu]
-type = internal/cpu
-interval = 2
-format-prefix = ""
-format-prefix-foreground = ${colors.foreground-alt}
-format-prefix-background = ${colors.background}
-format-prefix-font = 4
-format-prefix-padding-left = 2
-label = " %percentage:2%%"
-label-foreground = ${colors.foreground}
-label-background = ${colors.background}
-
-[module/memory]
-type = internal/memory
-interval = 2
-format-prefix = ""
-format-prefix-foreground = ${colors.foreground-alt}
-format-prefix-background = ${colors.background}
-format-prefix-font = 4
-format-prefix-padding-left = 2
-label = " %percentage_used%% "
-label-foreground = ${colors.foreground}
-label-background = ${colors.background}
+label-urgent = 
+label-urgent-font = 4
+label-urgent-foreground = #e57373
+label-urgent-padding = 1
 
 [module/date]
 type = internal/date
 interval = 5
 
-date = "%b %e, %Y "
-date-alt = " %Y-%m-%d"
+date-alt = "%Y-%m-%d "
 
 time = %H:%M
 time-alt = %I:%M:%S
 
-label = %date% %time%
-label-background = ${colors.background-alt}
-label-padding-left = 2
-label-padding-right = 2
+label = "%date%%time%"
+label-background = #383c4a
+label-padding = 2
+format-prefix = ""
+format-prefix-font = 3
+format-background = #383c4a
+format-prefix-padding-left = 2
 
 [module/powermenu]
 type = custom/menu
 expand-right = true
-format-spacing = 2
+format-padding = 1
+format-foreground = ${colors.foreground}
+format-background = #323642
 
 label-open = ""
-label-open-padding-left = 0
-label-open-padding-right = 2
+label-open-padding = 2
 label-open-font = 4
-label-open-foreground = ${colors.foreground-alt}
-label-open-background = ${colors.background-alt}
 
-label-close = " "
+label-close = ""
+label-close-padding = 2
 label-close-font = 4
-label-separator = |
-label-separator-foreground = ${colors.foreground-alt}
 
 menu-0-0 = reboot
-menu-0-0-exec = menu-open-1
+menu-0-0-padding = 2
+menu-0-0-exec = i3-nagbar -t warning -m 'Are you sure you want to reboot?' -B 'Yes, Reboot' 'shutdown -r now'
 menu-0-1 = power off
-menu-0-1-exec = menu-open-2
-
-menu-1-0 = cancel
-menu-1-0-exec = menu-open-0
-menu-1-1 = reboot
-menu-1-1-exec = shutdown -r now
-
-menu-2-0 = power off
-menu-2-0-exec = shutdown now
-menu-2-1 = cancel
-menu-2-1-exec = menu-open-0
+menu-0-1-padding = 2
+menu-0-1-exec = i3-nagbar -t warning -m 'Are you sure you want to shutdown?' -B 'Yes, Shutdown' 'shutdown now'
 
 [settings]
 screenchange-reload = true
@@ -217,9 +124,9 @@ format-connected = <label-connected>
 format-connected-prefix = ""
 format-connected-prefix-padding-left = 2
 format-connected-prefix-font = 4
-format-connected-prefix-foreground = ${colors.foreground-alt}
+format-connected-prefix-foreground = ${colors.foreground}
 format-connected-foreground = ${colors.foreground}
-format-connected-background = ${colors.background-alt}
+format-connected-background = #4a4f5e
 
 [module/networkdown]
 type = internal/network
@@ -231,33 +138,35 @@ format-connected = <label-connected>
 format-connected-prefix = ""
 format-connected-prefix-padding-left = 2
 format-connected-prefix-font = 4
-format-connected-prefix-foreground = ${colors.foreground-alt}
+format-connected-prefix-foreground = ${colors.foreground}
 format-connected-foreground = ${colors.foreground}
-format-connected-background = ${colors.background-alt}
+format-connected-background = #4a4f5e
+label-connected-padding-right = 2
 
 [module/volume]
 type = internal/pulseaudio
-format-volume = "<ramp-volume>  <label-volume>"
+format-volume = "<ramp-volume>  <label-volume>  "
 format-volume-font = 4
 format-volume-foreground = ${colors.foreground}
-format-volume-background = ${colors.background-alt}
+format-volume-background = #404552
+format-volume-padding = 2
 
 label-muted = ""
 label-muted-font = 4
-label-muted-foreground = ${colors.foreground}
-label-muted-background = ${colors.background-alt}
-label-muted-padding-left = 2
+label-muted-foreground = #e57373
+label-muted-background = #404552
+label-muted-padding = 2
 
-ramp-volume-foreground = ${colors.foreground-alt}
+ramp-volume-foreground = ${colors.foreground}
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
 ramp-volume-0-font = 4
 ramp-volume-1-font = 4
 ramp-volume-2-font = 4
-ramp-volume-0-padding-left = 2
-ramp-volume-1-padding-left = 2
-ramp-volume-2-padding-left = 2
+ramp-volume-0-padding-left = 1
+ramp-volume-1-padding-left = 1
+ramp-volume-2-padding-left = 1
 
 [global/wm]
 margin-top = 5

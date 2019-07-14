@@ -5,15 +5,15 @@
     },
     "accounts": {
         "current": "modesttim",
-        "uid44246256": {
-            "username": "socialbladegaming",
-            "userID": "44246256",
+        "uid51684790": {
+            "username": "modesttim",
+            "userID": "51684790",
             "clientID": "(redacted)",
             "oauthToken": "(redacted)"
         },
-        "uid7452653": {
-            "username": "socialblade",
-            "userID": "7452653",
+        "uid44246256": {
+            "username": "socialbladegaming",
+            "userID": "44246256",
             "clientID": "(redacted)",
             "oauthToken": "(redacted)"
         },
@@ -23,9 +23,9 @@
             "clientID": "(redacted)",
             "oauthToken": "(redacted)"
         },
-        "uid51684790": {
-            "username": "modesttim",
-            "userID": "51684790",
+        "uid7452653": {
+            "username": "socialblade",
+            "userID": "7452653",
             "clientID": "(redacted)",
             "oauthToken": "(redacted)"
         }
@@ -110,7 +110,8 @@
                 "pattern": "fossabot",
                 "regex": false
             }
-        ]
+        ],
+        "alwaysPlaySound": false
     },
     "moderation": {
         "actions": [
@@ -126,7 +127,9 @@
         ]
     },
     "notifications": {
-        "twitch": []
+        "twitch": [],
+        "enablePlaySound": true,
+        "enableFlashTaskbar": false
     },
     "logging": {
         "enabled": true

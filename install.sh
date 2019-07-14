@@ -16,6 +16,10 @@ cp .zsh_secrets ~/.zsh_secrets
 echo "Installing bat"
 sudo pacman -S bat
 
+echo "Installing fzf"
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+
 echo "Installing Oh My Vim"
 curl -L https://raw.github.com/liangxianzhe/oh-my-vim/master/tools/install.sh | sh
 
@@ -33,6 +37,7 @@ echo "Installing VSCode"
 yay -S visual-studio-code-bin
 
 echo "Installing VSCode Extensions"
+code --install-extension albymor.increment-selection
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension dsznajder.es7-react-js-snippets
 code --install-extension ducksoupdev.Vue2
@@ -41,12 +46,18 @@ code --install-extension GitHub.vscode-pull-request-github
 code --install-extension hollowtree.vue-snippets
 code --install-extension jsayol.firebase-explorer
 code --install-extension kumar-harsh.graphql-for-vscode
+code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
+code --install-extension ms-vscode-remote.remote-containers
+code --install-extension ms-vscode-remote.remote-ssh
+code --install-extension ms-vscode-remote.remote-ssh-edit
+code --install-extension ms-vscode-remote.remote-ssh-explorer
+code --install-extension ms-vscode-remote.remote-wsl
+code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 code --install-extension ms-vscode.atom-keybindings
 code --install-extension ms-vscode.Go
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension octref.vetur
-code --install-extension PeterJausovec.vscode-docker
 code --install-extension premparihar.gotestexplorer
 code --install-extension quicktype.quicktype
 code --install-extension redhat.vscode-yaml
