@@ -169,3 +169,5 @@ exec --no-startup-id feh --bg-fill /home/tim/Pictures/Wallpapers/41ad3385u3f01.j
 exec --no-startup-id chatterino &
 exec --no-startup-id $HOME/cdn-uploader
 exec --no-startup-id dunst
+
+mouse_warping none

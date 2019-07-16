@@ -32,6 +32,10 @@ mkdir -p ~/.vim/autoload/airline/themes/
 cp .vim/autoload/onedark.vim ~/.vim/autoload/onedark.vim
 wget -O ~/.vim/colors/onedark.vim https://raw.githubusercontent.com/joshdick/onedark.vim/master/colors/onedark.vim
 wget -O ~/.vim/autoload/airline/themes/onedark.vim https://raw.githubusercontent.com/joshdick/onedark.vim/master/autoload/airline/themes/onedark.vim
+git clone https://github.com/scrooloose/nerdtree.git ~/.vim/pack/dist/start/nerdtree
+git clone https://github.com/Xuyuanp/nerdtree-git-plugin.git ~/.vim/pack/dist/start/nerdtree-git-plugin
+git clone https://github.com/kien/ctrlp.vim ~/.vim/pack/dist/start/ctrlp
+git clone https://github.com/leafgarland/typescript-vim.git ~/.vim/pack/dist/start/typescript-vim
 
 echo "Installing VSCode"
 yay -S visual-studio-code-bin
