@@ -1,5 +1,6 @@
 [options]
-font = DejaVu Sans Mono Book 9
+# font = DejaVu Sans Mono Book 9
+font = Dank Mono 13px
 
 [colors]
 foreground        = #d0d0d0

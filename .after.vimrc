@@ -1,12 +1,14 @@
-let g:onedark_termcolors=16
+let g:onedark_termcolors=256
+
+set rtp+=$GOROOT/misc/vim
+filetype plugin indent on
 
 set background=dark
 syntax on
-colorscheme onedark
-
 set termguicolors
-
+let g:onedark_terminal_italics=1
 let g:airline_theme='onedark'
+colorscheme onedark
 
 set visualbell
 
@@ -28,12 +30,18 @@ set backspace=indent,eol,start
 
 let g:go_fmt_command = "goimports"
 let g:go_auto_type_info = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_function_parameters = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_build_constraints = 1
 
 " NERDTree
 nnoremap <C-\> :NERDTreeToggle<CR>
-
-" Duplicate Line
-nmap <C-d> mzyyp`z
 
 " Switch Tabs
 nmap <S-Tab> gt
@@ -54,4 +62,4 @@ let g:ctrlp_custom_ignore = {
     \ 'file': '\v\.(exe|so|dll)$',
     \ 'link': 'some_bad_symbolic_links',
     \ }
-
+let g:ctrlp_working_path_mode = 'ca'

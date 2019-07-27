@@ -29,3 +29,5 @@ exec ':so ' $OH_MY_VIM."/vimrc"
 
 set mouse=a
 set nowrap
+set textwidth=0
+set wrapmargin=0
