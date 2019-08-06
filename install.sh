@@ -23,6 +23,9 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 echo "Installing Oh My Vim"
 curl -L https://raw.github.com/liangxianzhe/oh-my-vim/master/tools/install.sh | sh
 
+echo "Installing VimPlug"
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 echo "Copying Vim configs"
 cp .after.vimrc ~/.after.vimrc
 

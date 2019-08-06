@@ -17,6 +17,7 @@ export EDITOR='vim'
 # Golang
 # export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
 
 export GEMPATH=$HOME/.gem/ruby/2.6.0
 export PATH=$GOPATH/bin:$GOROOT/bin:$GEMPATH/bin:$PATH
@@ -42,3 +43,6 @@ source ~/.zsh_secrets
 [ -f /home/tim/.travis/travis.sh ] && source /home/tim/.travis/travis.sh
 
 export TERM=xterm-256color
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export LC_ALL=en_US.UTF-8

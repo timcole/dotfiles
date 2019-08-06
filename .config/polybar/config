@@ -149,7 +149,7 @@ format-volume = "<ramp-volume>  <label-volume>  "
 format-volume-font = 4
 format-volume-foreground = ${colors.foreground}
 format-volume-background = #404552
-format-volume-padding = 2
+format-volume-padding = 1
 
 label-muted = ""
 label-muted-font = 4
@@ -158,15 +158,15 @@ label-muted-background = #404552
 label-muted-padding = 2
 
 ramp-volume-foreground = ${colors.foreground}
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
+ramp-volume-0 = ""
+ramp-volume-1 = ""
+ramp-volume-2 = ""
 ramp-volume-0-font = 4
 ramp-volume-1-font = 4
 ramp-volume-2-font = 4
-ramp-volume-0-padding-left = 1
-ramp-volume-1-padding-left = 1
-ramp-volume-2-padding-left = 1
+; ramp-volume-0-padding-left = 1
+; ramp-volume-1-padding-left = 1
+; ramp-volume-2-padding-left = 1
 
 [global/wm]
 margin-top = 5

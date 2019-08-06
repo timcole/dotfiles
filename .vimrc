@@ -27,6 +27,10 @@ let g:oh_my_vim_packages=[
 
 exec ':so ' $OH_MY_VIM."/vimrc"
 
+call plug#begin('~/.vim/plugged')
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+call plug#end()
+
 set mouse=a
 set nowrap
 set textwidth=0
