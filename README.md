@@ -6,5 +6,4 @@
 
 ---
 
-![https://timcole.me/ss/ItPlOiMXpx.png](https://cdn.tcole.me/ItPlOiMXpx.png)
-[_Wallpaper on Unsplash_](https://unsplash.com/photos/k33qWPtEfrM)
+![](https://i.imgur.com/BT440QQ.png)

@@ -1,79 +1,10 @@
-let g:onedark_termcolors=256
-
-set background=dark
-syntax on
-set termguicolors
-let g:onedark_terminal_italics=1
-let g:airline_theme='onedark'
-colorscheme onedark
-
-set visualbell
-
-set clipboard=unnamedplus
-
-" CTRL-C and CTRL-Insert are Copy
-vnoremap <C-C> "+y
-
-" CTRL-A is Select all
-noremap <C-A> gggH<C-O>G
-inoremap <C-A> <C-O>gg<C-O>gH<C-O>G
-cnoremap <C-A> <C-C>gggH<C-O>G
-onoremap <C-A> <C-C>gggH<C-O>G
-snoremap <C-A> <C-C>gggH<C-O>G
-xnoremap <C-A> <C-C>ggVG
-
-" Go
-set backspace=indent,eol,start
-
-let g:go_fmt_command = "goimports"
-let g:go_highlight_functions = 1
-let g:go_highlight_methods = 1
-let g:go_highlight_structs = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_function_parameters = 1
-let g:go_highlight_function_calls = 1
-let g:go_highlight_types = 1
-let g:go_highlight_fields = 1
-let g:go_highlight_build_constraints = 1
-let g:go_def_mode='gopls'
-let g:go_info_mode='gopls'
-let g:go_def_mapping_enabled = 0
-
-" NERDTree
-nnoremap <C-\> :NERDTreeToggle<CR>
-
-" Switch Tabs
-nmap <S-Tab> gt
-
-" Open terminal
-noremap <C-d> :sh<cr>
-
-" Automatically open NERDTree
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-
-" Close NERDTree if it's the only thing left
-" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
-" CtrlP Ignores
-let g:ctrlp_custom_ignore = {
-    \ 'dir':  '\v[\/](\.git|node_modules|vendor)$',
-    \ 'file': '\v\.(exe|so|dll)$',
-    \ 'link': 'some_bad_symbolic_links',
-    \ }
-let g:ctrlp_working_path_mode = '0'
-
-let g:dcrpc_autostart = 1
-
-set colorcolumn=0
-
 " coc
 " if hidden is not set, TextEdit might fail.
 set hidden
 " Better display for messages
 set cmdheight=2
 " Smaller updatetime for CursorHold & CursorHoldI
-set updatetime=300
+set updatetime=100
 " don't give |ins-completion-menu| messages.
 set shortmess+=c
 " always show signcolumns
@@ -131,5 +62,24 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
+let g:coc_global_extensions = [
+  \ 'coc-snippets',
+  \ 'coc-pairs',
+  \ 'coc-tsserver',
+  \ 'coc-eslint',
+  \ 'coc-prettier',
+  \ 'coc-json',
+  \ 'coc-go'
+  \ ]
+
 let g:airline#extensions#coc#enabled = 1
 set completeopt=preview,noselect
+
+if has("clipboard")
+  set clipboard=unnamed " copy to the system clipboard
+
+  if has("unnamedplus") " X11 support
+    set clipboard+=unnamedplus
+  endif
+endif
+

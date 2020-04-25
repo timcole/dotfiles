@@ -1,43 +1,125 @@
-" This is the oh my vim directory
-let $OH_MY_VIM="/home/tim/.oh-my-vim"
-let &runtimepath=substitute(&runtimepath, '^', $OH_MY_VIM.",", 'g')
+set encoding=UTF-8
+set clipboard=unnamedplus
+filetype plugin indent on
+filetype plugin on
 
-" Select the packages you need
-let g:oh_my_vim_packages=[
-            \'vim',
-            \'basic',
-            \'code',
-            \'text',
-            \'grep', 
-            \'searching', 
-            \'registers', 
-            \'navigation', 
-            \'files', 
-            \'git', 
-            \'python', 
-            \'web',
-            \'tools', 
-            \'markdown', 
-            \'bookmarks', 
-            \'sessions', 
-            \'spelling',
-            \'neobundle', 
-            \'golang'
-            \]
-
-exec ':so ' $OH_MY_VIM."/vimrc"
-
-call plug#begin('~/.vim/plugged')
-" Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+call plug#begin(stdpath('data') . '/plugged')
+Plug 'rakr/vim-one'
+Plug 'vim-airline/vim-airline'
+Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'fatih/vim-go', {'do':':GoInstallBinaries'}
+Plug 'tpope/vim-commentary'
+Plug 'airblade/vim-gitgutter'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'godlygeek/tabular'
+Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app & yarn install'}
 call plug#end()
 
+if !has("gui_running")
+  set t_Co=256
+endif
+
+let mapleader = ","
 set mouse=a
 set nowrap
 set textwidth=0
 set wrapmargin=0
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set nosmarttab
+set autoindent
+set sw=2
+set go-=T
+set go-=m
+set ls=2
+set background=dark
+syntax on
+set termguicolors
+let g:one_allow_italics=1
+let g:airline_theme='one'
+let g:airline_powerline_fonts=1
+color one
+call one#highlight('Normal', '', '242830', 'none')
+call one#highlight('SignColumn', '', '2c313a', 'none')
+call one#highlight('CursorLine', '', '2c313a', 'none')
+call one#highlight('CursorLineNr', '', '2c313a', 'none')
+call one#highlight('CursorColumn', '', '2c313a', 'none')
+call one#highlight('LineNr', '', '2c313a', 'none')
+call one#highlight('VertSplit', '282c34', '282c34', 'none')
+set visualbell
+set list
+set title
+set autoread
+set ttimeoutlen=0
+set updatetime=50
+set nu rnu
+set nowrap
+set incsearch
+set showmatch
+set hlsearch
+set smartcase
+set ignorecase
+set cursorline
 
-autocmd FileType javascript setlocal omnifunc=syntaxcomplete#Complete
+set backspace=indent,eol,start
+set listchars=space:·,tab:→\ 
 
+set backup
+set noswapfile
+set backupdir=$HOME/.vim/tmp/backup/
+set undodir=$HOME/.vim/tmp/undo/
+set directory=$HOME/.vim/tmp/swap/
+set viminfo+=n$HOME/.vim/tmp/viminfo
+
+function! MakeDirIfNoExists(path)
+  if !isdirectory(expand(a:path))
+    call mkdir(expand(a:path), "p")
+  endif
+endfunction
+
+" make this dirs if no exists previously
+silent! call MakeDirIfNoExists(&undodir)
+silent! call MakeDirIfNoExists(&backupdir)
+silent! call MakeDirIfNoExists(&directory)
+
+nmap <Leader>c <Plug>CommentaryLine
+xmap <Leader>c <Plug>Commentary
+
+" CTRL-C and CTRL-Insert are Copy
+vnoremap <C-C> "+y
+
+" CTRL-A is Select all
+noremap <C-A> gggH<C-O>G
+inoremap <C-A> <C-O>gg<C-O>gH<C-O>G
+cnoremap <C-A> <C-C>gggH<C-O>G
+onoremap <C-A> <C-C>gggH<C-O>G
+snoremap <C-A> <C-C>gggH<C-O>G
+xnoremap <C-A> <C-C>ggVG
+
+set exrc
+set secure
+
+nmap <leader>s :source ~/.vimrc<cr>
+
+nmap <silent> <Leader>w :update<cr>
+
+" Switch Tabs
+nmap <Tab> gt
+nmap <S-Tab> gT
+
+nmap <C-w> :q<cr>
+
+source ~/.go.vimrc
+source ~/.coc.vimrc
+source ~/.nerdtree.vimrc
+source ~/.ctrlp.vimrc

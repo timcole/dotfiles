@@ -1,13 +1,13 @@
 [user]
-	email = tim@timcole.me
-	name = Timothy Cole
-	signingkey = 85EDCE1ADA9AB4A3
+  signingkey = C8FC3C8FEF3119C8
+  name = Timothy Cole
+  email = tim@timcole.me
+
 [alias]
-	st = status
-	branch = "!f() { git rev-parse --abbrev-ref HEAD; }; f"
-[commit]
-	gpgsign = true
-[url "git@github.com:"]
-	insteadOf = https://github.com/
-# [hub]
-# 	host = git-aws.internal.justin.tv
+  st = status
+
+[url "ssh://git@git.notify.me"]
+  insteadOf = https://git.notify.me
+
+[url "ssh://git@github.com"]
+  insteadOf = https://github.com
