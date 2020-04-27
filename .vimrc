@@ -14,13 +14,14 @@ Plug 'tpope/vim-commentary'
 Plug 'airblade/vim-gitgutter'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'maxmellon/vim-jsx-pretty'
-Plug 'godlygeek/tabular'
 Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app & yarn install'}
+Plug 'norcalli/nvim-colorizer.lua'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 if !has("gui_running")
