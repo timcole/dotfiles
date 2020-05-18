@@ -22,6 +22,7 @@ Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app & yarn install'}
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'mattn/emmet-vim'
 call plug#end()
 
 if !has("gui_running")
@@ -50,7 +51,7 @@ let g:one_allow_italics=1
 let g:airline_theme='one'
 let g:airline_powerline_fonts=1
 color one
-call one#highlight('Normal', '', '242830', 'none')
+call one#highlight('Normal', '', '252830', 'none')
 call one#highlight('SignColumn', '', '2c313a', 'none')
 call one#highlight('CursorLine', '', '2c313a', 'none')
 call one#highlight('CursorLineNr', '', '2c313a', 'none')
@@ -71,6 +72,8 @@ set hlsearch
 set smartcase
 set ignorecase
 set cursorline
+set showtabline=2
+set noshowmode
 
 set backspace=indent,eol,start
 set listchars=space:·,tab:→\ 
@@ -115,12 +118,15 @@ nmap <leader>s :source ~/.vimrc<cr>
 nmap <silent> <Leader>w :update<cr>
 
 " Switch Tabs
-nmap <Tab> gt
-nmap <S-Tab> gT
+nmap <Tab> :bnext<cr>
+nmap <S-Tab> :bprev<cr>
+nmap <S-W> :bd<cr>
 
 nmap <C-w> :q<cr>
+
+nmap <C-l> :set spell! spelllang=en_us<cr>
 
 source ~/.go.vimrc
 source ~/.coc.vimrc
 source ~/.nerdtree.vimrc
-source ~/.ctrlp.vimrc
+source ~/.airline.vimrc

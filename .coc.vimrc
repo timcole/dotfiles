@@ -36,8 +36,7 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-" Use U to show documentation in preview window
-nnoremap <silent> U :call <SID>show_documentation()<CR>
+nnoremap <C-k> :call CocAction('doHover')<CR>
 
 " Remap for rename current word
 nmap <leader>rn <Plug>(coc-rename)

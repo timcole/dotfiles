@@ -30,7 +30,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # Bat > Cat -- https://github.com/sharkdp/bat
 alias cat="bat --theme TwoDark"
-
 # Remove all docker containers
 alias dk="docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs docker rm"
 
@@ -39,3 +38,7 @@ source ~/.zsh_secrets
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export LC_ALL=en_US.UTF-8
+
+# Deno
+export DENO_INSTALL="/Users/tim/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
