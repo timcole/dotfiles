@@ -1,0 +1,20 @@
+{
+  "suggest.noselect": false,
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.preferences.quoteStyle": "single",
+  "coc.preferences.formatOnSaveFiletypes": [
+    "typescriptreact",
+    "json",
+    "javascriptreact",
+    "typescript.tsx",
+    "typescript",
+    "graphql",
+    "rust",
+    "scss",
+    "vue"
+  ],
+  "tsserver.formatOnType": true,
+  "coc.preferences.formatOnType": true,
+  "typescript.updateImportsOnFileMove.enable": true,
+  "prettier.singleQuote": true
+}
