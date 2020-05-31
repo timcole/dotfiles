@@ -23,6 +23,7 @@ Plug 'norcalli/nvim-colorizer.lua'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'mattn/emmet-vim'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 if !has("gui_running")
