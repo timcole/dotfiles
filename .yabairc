@@ -32,4 +32,4 @@ for row in $(yabai -m signal --list | jq -r 'reverse | .[] | @base64'); do
  done
 
 yabai -m signal --add event=space_changed \
-  action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"nibar-spaces-jsx\"'"
+  action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"bar-spaces-jsx\"'"
