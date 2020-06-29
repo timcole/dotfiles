@@ -1,0 +1,35 @@
+yabai -m config top_padding    0
+yabai -m config bottom_padding 0
+yabai -m config left_padding   0
+yabai -m config right_padding  0
+yabai -m config window_gap     0
+
+yabai -m config layout bsp
+
+yabai -m config window_topmost on
+
+yabai -m config window_shadow float
+
+yabai -m config mouse_follows_focus off
+yabai -m config focus_follows_mouse off
+
+yabai -m config window_border on
+yabai -m config window_border_width 4
+yabai -m config active_window_border_color 0xB26F7783
+yabai -m config normal_window_border_color 0xB2282828
+
+yabai -m rule --add app="^System Preferences$" manage=off
+yabai -m rule --add app="^Messages$" manage=off
+yabai -m rule --add app="^Finder$" manage=off
+
+yabai -m config external_bar all:26:0
+
+for row in $(yabai -m signal --list | jq -r 'reverse | .[] | @base64'); do
+  _jq() {
+    echo ${row} | base64 --decode | jq -r ${1}
+  }
+  yabai -m signal --remove $(_jq '.index')
+ done
+
+yabai -m signal --add event=space_changed \
+  action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"nibar-spaces-jsx\"'"

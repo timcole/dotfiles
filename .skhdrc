@@ -1,0 +1,59 @@
+# alt - return : "/Applications/iTerm 2.app/Contents/MacOS/iTerm2"
+alt - return : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d ~
+
+# focus window
+alt - h : yabai -m window --focus west
+alt - j : yabai -m window --focus south
+alt - k : yabai -m window --focus north
+alt - l : yabai -m window --focus east
+
+cmd - j : yabai -m window --focus prev
+cmd - k : yabai -m window --focus next
+
+# switch monitors
+ctrl + cmd - 1 : yabai -m display --focus 1
+ctrl + cmd - 2 : yabai -m display --focus 2
+ctrl + cmd - 3 : yabai -m display --focus 3
+
+# swap window
+shift + alt - h : yabai -m window --swap west
+shift + alt - j : yabai -m window --swap south
+shift + alt - k : yabai -m window --swap north
+shift + alt - l : yabai -m window --swap east
+
+# Move window to different space
+cmd + shift - 1 : yabai -m window --space 1
+cmd + shift - 2 : yabai -m window --space 2
+cmd + shift - 3 : yabai -m window --space 3
+cmd + shift - 4 : yabai -m window --space 4
+cmd + shift - 5 : yabai -m window --space 5
+cmd + shift - 6 : yabai -m window --space 6
+cmd + shift - 7 : yabai -m window --space 7
+cmd + shift - 8 : yabai -m window --space 8
+cmd + shift - 9 : yabai -m window --space 9
+cmd + shift - 0 : yabai -m window --space 10
+
+# fast focus desktop
+cmd - 1 : yabai -m space --focus 1
+cmd - 2 : yabai -m space --focus 2
+cmd - 3 : yabai -m space --focus 3
+cmd - 4 : yabai -m space --focus 4
+cmd - 5 : yabai -m space --focus 5
+cmd - 6 : yabai -m space --focus 6
+cmd - 7 : yabai -m space --focus 7
+cmd - 8 : yabai -m space --focus 8
+cmd - 9 : yabai -m space --focus 9
+cmd - 0 : yabai -m space --focus 10
+alt - 0x18 : yabai -m space --create
+alt - 0x1B : yabai -m space --destroy
+
+alt - space : yabai -m window --toggle float
+alt - s : yabai -m window --toggle sticky
+
+# resize
+alt + shift - r : yabai -m space --balance
+alt + shift - a : yabai -m window --resize left:-20:0
+alt + shift - d : yabai -m window --resize left:20:0
+
+cmd + shift - f : yabai -m window --toggle zoom-parent
+cmd + shift - s : yabai -m window --toggle split

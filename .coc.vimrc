@@ -68,7 +68,11 @@ let g:coc_global_extensions = [
   \ 'coc-eslint',
   \ 'coc-prettier',
   \ 'coc-json',
-  \ 'coc-go'
+  \ 'coc-go',
+  \ 'coc-emoji',
+  \ 'coc-emmet',
+  \ 'coc-css',
+  \ 'coc-rls',
   \ ]
 
 let g:airline#extensions#coc#enabled = 1
@@ -82,3 +86,4 @@ if has("clipboard")
   endif
 endif
 
+nnoremap <C-\> :CocCommand explorer<CR>

@@ -6,7 +6,6 @@ filetype plugin on
 call plug#begin(stdpath('data') . '/plugged')
 Plug 'rakr/vim-one'
 Plug 'vim-airline/vim-airline'
-Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'fatih/vim-go', {'do':':GoInstallBinaries'}
@@ -111,6 +110,10 @@ onoremap <C-A> <C-C>gggH<C-O>G
 snoremap <C-A> <C-C>gggH<C-O>G
 xnoremap <C-A> <C-C>ggVG
 
+imap <C-L> <C-O>$
+
+nmap <C-P> :Files<cr>
+
 set exrc
 set secure
 
@@ -129,5 +132,4 @@ nmap <C-l> :set spell! spelllang=en_us<cr>
 
 source ~/.go.vimrc
 source ~/.coc.vimrc
-source ~/.nerdtree.vimrc
 source ~/.airline.vimrc

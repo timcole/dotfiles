@@ -19,7 +19,7 @@ let g:airline#extensions#tabline#buffers_label = ''
 let g:airline#extensions#tabline#tabs_label = ''
 
 " Just show the file name
-let g:airline#extensions#tabline#fnamemod = ':t'
+" let g:airline#extensions#tabline#fnamemod = ':t'
 
 " enable powerline fonts
 let g:airline_powerline_fonts = 1
@@ -27,7 +27,7 @@ let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
 
-let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 
 set showtabline=2
 set noshowmode
