@@ -3,7 +3,7 @@ export default {
     fg: 'rgba(255,255,255,0.8)',
     dim: '#dfebf5',
     bg: '#1f2128',
-    red: '#a3413a',
+    red: '#e88881',
     accent: '#3b80df',
   },
   fontSize: '15px',

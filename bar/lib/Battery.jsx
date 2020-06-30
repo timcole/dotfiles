@@ -4,6 +4,19 @@ const render = ({ output }) => {
   let charging = output.charging;
   let percentage = output.percentage;
   if (charging && percentage == 100) return <div></div>;
+
+  let icon = charging
+    ? ''
+    : percentage > 75
+    ? ''
+    : percentage > 50
+    ? ''
+    : percentage > 25
+    ? ''
+    : percentage > 10
+    ? ''
+    : '';
+
   return (
     <div
       style={{
@@ -14,11 +27,11 @@ const render = ({ output }) => {
     >
       <div
         style={
-          percentage < 10 && !charging ? { color: styles.colors.red } : null
+          percentage <= 10 && !charging ? { color: styles.colors.red } : null
         }
       >
         <span>
-          {charging ? '' : ''} {percentage}%
+          {icon} {percentage}%
         </span>
       </div>
     </div>
