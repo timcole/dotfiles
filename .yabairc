@@ -21,6 +21,8 @@ yabai -m config normal_window_border_color 0xB2282828
 yabai -m rule --add app="^System Preferences$" manage=off
 yabai -m rule --add app="^Messages$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
+yabai -m rule --add app="^Bear$" manage=off
+yabai -m rule --add app="^Save$" manage=off
 
 yabai -m config external_bar all:26:0
 

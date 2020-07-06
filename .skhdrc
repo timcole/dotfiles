@@ -57,3 +57,7 @@ alt + shift - d : yabai -m window --resize left:20:0
 
 cmd + shift - f : yabai -m window --toggle zoom-parent
 cmd + shift - s : yabai -m window --toggle split
+
+# screenshot
+alt + shift - p : ~/screenshot.sh
+alt + shift - n : ~/nuuls.sh
