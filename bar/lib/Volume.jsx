@@ -9,6 +9,7 @@ const style = {
 
 const render = ({ output }) => {
   if (typeof output === 'undefined') return null;
+  if (output === 'missing value') output = 100;
 
   if (output == 0)
     return <div style={{ ...style, color: styles.colors.red }}></div>;

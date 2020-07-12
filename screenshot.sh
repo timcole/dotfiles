@@ -19,7 +19,7 @@ if [ ! -e ${MAIN_FOLDER}/${NAME}.png ]; then exit 0; fi
 $GSUTIL_PATH cp ${MAIN_FOLDER}/${NAME}.png gs://${BUCKET_NAME}/${NAME}.png
 
 # File URL
-FILE_URL="https://cdn.tcole.me/${NAME}.png"
+FILE_URL="https://t.pics/${NAME}.png"
 
 # Copy URL to clipboard
 echo $FILE_URL | pbcopy 
