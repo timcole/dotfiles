@@ -1,8 +1,8 @@
 #!/bin/bash
 MAIN_FOLDER="$HOME/Pictures/Screenshots"
-BUCKET_NAME="cdn.tcole.me"
+SERVER_NAME="poggers"
+BUCKET_NAME="cdn"
 NAME=$(openssl rand -base64 8 | tr -dc '[:alnum:]\n\r')
-GSUTIL_PATH="/usr/local/bin/gsutil"
 
 # Make folder
 mkdir -p ${MAIN_FOLDER}/
@@ -16,7 +16,7 @@ if [ ! -e ${MAIN_FOLDER}/${NAME}.png ]; then exit 0; fi
 # osascript -e 'display notification "'"$NAME"'" with title "Uploading Screenshot"'
 
 # Upload
-$GSUTIL_PATH cp ${MAIN_FOLDER}/${NAME}.png gs://${BUCKET_NAME}/${NAME}.png
+mc cp ${MAIN_FOLDER}/${NAME}.png ${SERVER_NAME}/${BUCKET_NAME}/${NAME}.png
 
 # File URL
 FILE_URL="https://t.pics/${NAME}.png"
