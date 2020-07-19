@@ -2,7 +2,7 @@ export default {
   colors: {
     fg: 'rgba(255,255,255,0.8)',
     dim: '#dfebf5',
-    bg: '#1f2128',
+    bg: '#0F1219',
     red: '#e88881',
     accent: '#3b80df',
   },

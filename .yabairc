@@ -15,7 +15,7 @@ yabai -m config focus_follows_mouse off
 
 yabai -m config window_border on
 yabai -m config window_border_width 4
-yabai -m config active_window_border_color 0xB26F7783
+yabai -m config active_window_border_color 0xB2161D26
 yabai -m config normal_window_border_color 0xB2282828
 
 yabai -m rule --add app="^System Preferences$" manage=off

@@ -23,6 +23,8 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-fugitive'
+Plug 'rust-lang/rust.vim'
+Plug 'wakatime/vim-wakatime'
 call plug#end()
 
 if !has("gui_running")
@@ -44,20 +46,28 @@ set sw=2
 set go-=T
 set go-=m
 set ls=2
-set background=dark
-syntax on
+" syntax on
 set termguicolors
 let g:one_allow_italics=1
 let g:airline_theme='one'
 let g:airline_powerline_fonts=1
+
+set background=dark
 color one
-call one#highlight('Normal', '', '252830', 'none')
-call one#highlight('SignColumn', '', '2c313a', 'none')
-call one#highlight('CursorLine', '', '2c313a', 'none')
-call one#highlight('CursorLineNr', '', '2c313a', 'none')
-call one#highlight('CursorColumn', '', '2c313a', 'none')
-call one#highlight('LineNr', '', '2c313a', 'none')
-call one#highlight('VertSplit', '282c34', '282c34', 'none')
+if &background ==# 'dark'
+  call one#highlight('Normal', '', '0F1219', 'none')
+  call one#highlight('SignColumn', '', '161D26', 'none')
+  call one#highlight('CursorLine', '', '161D26', 'none')
+  call one#highlight('CursorLineNr', '', '161D26', 'none')
+  call one#highlight('CursorColumn', '', '161D26', 'none')
+  call one#highlight('LineNr', '', '161D26', 'none')
+  call one#highlight('VertSplit', '0F141A', '0F141A', 'none')
+  call one#highlight('NonText', '1D2632', '', 'none')
+  call one#highlight('SpecialKey', '1D2632', '', 'none')
+  call one#highlight('Keyword', '', '', 'italic')
+  call one#highlight('DiffAdd', '52ACB8', '', '')
+endif
+
 set visualbell
 set list
 set title
@@ -129,6 +139,9 @@ nmap <S-W> :bd<cr>
 nmap <C-w> :q<cr>
 
 nmap <C-l> :set spell! spelllang=en_us<cr>
+
+let g:rustfmt_autosave = 1
+autocmd FileType rust setlocal ts=2 sw=2 expandtab equalprg=rustfmt
 
 source ~/.go.vimrc
 source ~/.coc.vimrc

@@ -1,7 +1,7 @@
 import styles from './styles.jsx';
 
 const style = {
-  background: '#404552',
+  background: '#1D2632',
   paddingLeft: 15,
   paddingRight: 15,
 };

@@ -1,5 +1,5 @@
 const style = {
-  background: '#383c4a',
+  background: '#212C39',
   paddingLeft: 15,
   paddingRight: 15,
   display: 'inline-block',
@@ -10,7 +10,7 @@ const render = ({ output }) => {
   return (
     <div>
       <span style={style}> {output.date}</span>
-      <span style={{ ...style, background: '#323642' }}> {output.time}</span>
+      <span style={{ ...style, background: '#243140' }}> {output.time}</span>
     </div>
   );
 };

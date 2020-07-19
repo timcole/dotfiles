@@ -20,7 +20,8 @@ const render = ({ output }) => {
   return (
     <div
       style={{
-        background: '#575d6d',
+        background:
+          percentage > 25 ? '#131920' : percentage > 10 ? '#7D6731' : '#7D2F32',
         paddingLeft: 15,
         paddingRight: 15,
       }}

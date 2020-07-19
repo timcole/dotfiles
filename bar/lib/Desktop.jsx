@@ -6,7 +6,7 @@ const containerStyle = {
   gridAutoFlow: 'column',
   cursor: 'pointer',
   select: 'none',
-  background: '#383c4a',
+  background: '#161D26',
   padding: '0 5px',
 };
 
