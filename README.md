@@ -19,5 +19,5 @@ I switched to Mac for work back in September 2019. Before I was using Arch Linux
 ---
 
 ![](https://cdn.t.pics/dotfiles/floating-screenshot.jpg)
-![](https://cdn.t.pics/dotfiles/tiled-screenshot.png)
+![](https://cdn.t.pics/dotfiles/tiled-screenshot.jpg)
 ![](https://cdn.t.pics/dotfiles/setup.jpg)
