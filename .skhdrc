@@ -61,3 +61,4 @@ cmd + shift - s : yabai -m window --toggle split
 # screenshot
 alt + shift - p : ~/screenshot.sh
 alt + shift - n : ~/nuuls.sh
+alt + shift - u : open -a Firefox "https://say.tim.lgbt/?content=$(pbpaste)"
