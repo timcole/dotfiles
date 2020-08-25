@@ -8,7 +8,8 @@ export default {
   },
   fontSize: '15px',
   lineHeight: '26px',
-  fontFamily: "'Dank Mono', 'Font Awesome 5 Pro', 'Font Awesome 5 Free'",
+  fontFamily:
+    "'Operator Mono Light', 'Dank Mono', 'Font Awesome 5 Pro', 'Font Awesome 5 Free'",
   solidFamily:
-    "'Dank Mono', 'Font Awesome 5 Pro Solid', 'Font Awesome 5 Free Solid'",
+    "'Operator Mono Light', 'Dank Mono', 'Font Awesome 5 Pro Solid', 'Font Awesome 5 Free Solid'",
 };
