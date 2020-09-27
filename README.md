@@ -10,7 +10,6 @@ I switched to Mac for work back in September 2019. Before I was using Arch Linux
 
 |Things I use|What they do|
 |-|-|
-|[yabai](https://github.com/koekeishiya/yabai)|Tiling Window Manager|
 |[skhd](https://github.com/koekeishiya/skhd)|Hotkey Daemon|
 |[kitty](https://github.com/kovidgoyal/kitty)|Terminal emulator|
 |[zsh](https://github.com/ohmyzsh/ohmyzsh)|Terminal Shell|
