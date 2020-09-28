@@ -143,6 +143,7 @@ qt
 rapidjson
 rav1e
 readline
+reattach-to-user-namespace
 redis
 rtmpdump
 rubberband
