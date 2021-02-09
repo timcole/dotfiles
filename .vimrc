@@ -10,22 +10,20 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'fatih/vim-go', {'do':':GoInstallBinaries'}
 Plug 'tpope/vim-commentary'
-Plug 'airblade/vim-gitgutter'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'pangloss/vim-javascript'
+" Plug 'airblade/vim-gitgutter'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'maxmellon/vim-jsx-pretty'
-Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app & yarn install'}
-Plug 'norcalli/nvim-colorizer.lua'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
-Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'rust-lang/rust.vim'
-Plug 'wakatime/vim-wakatime'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install' }
+Plug 'puremourning/vimspector'
 call plug#end()
+
+let g:vimspector_enable_mappings = 'HUMAN'
+let g:mkdp_browser = 'safari'
 
 if !has("gui_running")
   set t_Co=256
@@ -46,6 +44,7 @@ set sw=2
 set go-=T
 set go-=m
 set ls=2
+set completeopt-=preview
 " syntax on
 set termguicolors
 let g:one_allow_italics=1
@@ -142,6 +141,18 @@ nmap <C-l> :set spell! spelllang=en_us<cr>
 
 let g:rustfmt_autosave = 1
 autocmd FileType rust setlocal ts=2 sw=2 expandtab equalprg=rustfmt
+" Create debug split
+nnoremap <leader>o :!tmux splitw -h -p 30 -c $(pwd)<CR><C-L>
+" Run Ctrl-C to kill running process, then cargo run
+nnoremap <leader>r :!tmux send-keys -t 1 C-c "clear; cargo run" C-m<CR><C-L>
+" Run Ctrl-C in debug pane
+nnoremap <leader>t :!tmux send-keys -t 1 C-c<CR><C-L>
+
+set inccommand=split
+augroup LuaHighlight
+  autocmd!
+  autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank()
+augroup END
 
 source ~/.go.vimrc
 source ~/.coc.vimrc

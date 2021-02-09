@@ -1,4 +1,5 @@
 alt - return : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d ~
+# alt - return : "/Applications/iTerm 2.app/Contents/MacOS/iTerm2"
 
 # screenshot
 alt + shift - p : ~/screenshot.sh
