@@ -12,7 +12,8 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
 Plug 'neovim/nvim-lspconfig'
-Plug 'nvim-lua/completion-nvim'
+" Plug 'nvim-lua/completion-nvim'
+Plug 'hrsh7th/nvim-compe'
 
 Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-fugitive'
