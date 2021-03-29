@@ -1,9 +1,10 @@
 filetype plugin on
 
 call plug#begin(stdpath('data') . '/plugged')
-Plug 'sainnhe/sonokai'
+" Plug 'sainnhe/sonokai'
+Plug 'rakr/vim-one'
 Plug 'bagrat/vim-buffet'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'tpope/vim-commentary'
 
 Plug 'nvim-lua/popup.nvim'
@@ -18,16 +19,34 @@ Plug 'tpope/vim-fugitive'
 Plug 'prettier/vim-prettier', {
       \ 'do': 'npm install',
       \ 'for': ['javascript', 'typescript', 'typescriptreact', 'javascriptreact'] }
+
+Plug 'npxbr/glow.nvim', {'do': ':GlowInstall'}
 call plug#end()
 
 if has('termguicolors')
   set termguicolors
 endif
-let g:sonokai_style = 'default'
-let g:sonokai_enable_italic = 1
-let g:sonokai_transparent_background = 1
-let g:sonokai_menu_selection_background = "blue"
-colorscheme sonokai
+" let g:sonokai_style = 'default'
+" let g:sonokai_enable_italic = 1
+" let g:sonokai_transparent_background = 1
+" let g:sonokai_menu_selection_background = "blue"
+" colorscheme sonokai
+set background=dark
+color one
+let g:one_allow_italics=1
+if &background ==# 'dark'
+  call one#highlight('Normal', '', '0F1219', 'none')
+  call one#highlight('SignColumn', '', '161D26', 'none')
+  call one#highlight('CursorLine', '', '161D26', 'none')
+  call one#highlight('CursorLineNr', '', '161D26', 'none')
+  call one#highlight('CursorColumn', '', '161D26', 'none')
+  call one#highlight('LineNr', '', '161D26', 'none')
+  call one#highlight('VertSplit', '0F141A', '0F141A', 'none')
+  call one#highlight('NonText', '1D2632', '', 'none')
+  call one#highlight('SpecialKey', '1D2632', '', 'none')
+  call one#highlight('Keyword', '', '', 'italic')
+  call one#highlight('DiffAdd', '52ACB8', '', '')
+endif
 
 set exrc
 set secure
@@ -57,7 +76,7 @@ augroup END
 set list
 set listchars=space:·,tab:→\ 
 
-lua require'nvim-treesitter.configs'.setup { highlight = { enable = true } }
+" lua require'nvim-treesitter.configs'.setup { highlight = { enable = false } }
 
 let mapleader = ","
 nmap <Leader>s :source ~/.config/nvim/init.vim<cr>
