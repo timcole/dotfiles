@@ -88,3 +88,10 @@ map <C-l> :set spell! spelllang=en_us<cr>
 
 nnoremap <leader>o :!tmux splitw -h -p 30 -c $(pwd)<CR><C-L>
 nnoremap <leader>t :!tmux send-keys -t 1 C-c<CR><C-L>
+
+imap "" ""<esc>i
+imap '' ''<esc>i
+imap `` ``<esc>i
+imap (( ()<esc>i
+imap \[\[ \[\]<esc>i
+imap {{ {}<esc>i

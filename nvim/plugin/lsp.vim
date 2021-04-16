@@ -1,6 +1,6 @@
 nnoremap gd :lua vim.lsp.buf.definition()<CR>
 nnoremap rn :lua vim.lsp.buf.rename()<CR>
-nnoremap <S-k> :lua vim.lsp.buf.hover()<CR>)
+nnoremap <C-k> :lua vim.lsp.buf.hover()<CR>
 
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
@@ -36,5 +36,6 @@ inoremap <silent><expr> <C-e>     compe#close('<C-e>')
 
 " let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 " let g:completion_trigger_on_delete = 1
-lua require'lspconfig'.rls.setup{  }
+" lua require'lspconfig'.rls.setup{  }
+lua require'lspconfig'.rust_analyzer.setup{  }
 lua require'lspconfig'.tsserver.setup{  }
