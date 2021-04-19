@@ -20,6 +20,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'prettier/vim-prettier', {
       \ 'do': 'npm install',
       \ 'for': ['javascript', 'typescript', 'typescriptreact', 'javascriptreact'] }
+Plug 'jparise/vim-graphql'
 
 Plug 'npxbr/glow.nvim', {'do': ':GlowInstall'}
 call plug#end()
