@@ -2,7 +2,7 @@ alt - return : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d
 # alt - return : "/Applications/iTerm 2.app/Contents/MacOS/iTerm2"
 
 # screenshot
-alt + shift - p : ~/screenshot.sh
-alt + shift - s : ~/spaceshot.sh
-alt + shift - n : ~/nuuls.sh
+alt + shift - p : $HOME/bin/screenshot
+alt + shift - s : $HOME/bin/spaceshot
+alt + shift - n : $HOME/bin/nuuls
 alt + shift - u : open -a Firefox "https://say.tim.lgbt/?content=$(pbpaste)"

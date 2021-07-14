@@ -6,7 +6,7 @@
 ---
 
 These are my dotfiles that I use on my Macbook Pro 15" 2019  
-I switched to Mac for work back in September 2019. Before I was using Arch Linux with i3 [old linux dotfiles](https://github.com/TimothyCole/dotfiles/tree/60e72f47d26eac0b967ee7f93132aa1092a06ffc)
+I switched to Mac back in September 2019. Before that I was using Arch Linux with i3 [old linux dotfiles](https://github.com/TimothyCole/dotfiles/tree/60e72f47d26eac0b967ee7f93132aa1092a06ffc)
 
 |Things I use|What they do|
 |-|-|
@@ -17,6 +17,5 @@ I switched to Mac for work back in September 2019. Before I was using Arch Linux
 
 ---
 
-![](https://cdn.t.pics/dotfiles/floating-screenshot.jpg)
-![](https://cdn.t.pics/dotfiles/tiled-screenshot.jpg)
-![](https://cdn.t.pics/dotfiles/setup.jpg)
+![](https://t.pics/86opGDJpoKQ.png)
+![](https://t.pics/setup.png)

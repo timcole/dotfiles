@@ -1,20 +1,8 @@
-# Social Blade API
-export SOCIALBLADE_AUTH="(redacted)"
-export SOCIALBLADE_KEY="(redacted)"
-export SOCIALBLADE_API="(redacted)"
-export SOCIALBLADE_EMAIL="tim@socialblade.com"
-export SOCIALBLADE_TOKEN="(redacted)"
-export SOCIAL_BLADE_DISCORD_TOKEN="Bot (redacted)"
-
-# Twitch API
-export TWITCH_OAUTH="(redacted)"
-export TWITCH_SOCIALBLADE="(redacted)"
-
-# Spotify API
-export SPOTIFY_CLIENT_ID="(redacted)"
-export SPOTIFY_CLIENT_SECRET="(redacted)"
-
+#!/usr/bin/env bash
 alias icloud="~/Library/Mobile\ Documents/com~apple~CloudDocs/"
+alias cat="bat --theme TwoDark"
+# Remove all docker containers
+alias dk="docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs docker rm"
 
 if [ $TERM = 'xterm-kitty' ]; then
   export PATH=/Applications/kitty.app/Contents/MacOS/kitty:$PATH
@@ -28,21 +16,20 @@ if [ $TERM = 'xterm-kitty' ]; then
 fi
 
 vim() {
-  if [ -z "$1" ]
+  if [ -z "$1" ] && git status
   then
-   nvim +"Telescope git_files" 
+     nvim +"Telescope git_files"
+  elif [ -z "$1" ]
+  then
+     nvim +"Telescope find_files"
   else
-   nvim $1
+     nvim $1
   fi
 }
 
 gachi() {
   cd ~/Music/gachi/
   youtube-dl --ignore-errors --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" $1
-}
-
-interface() {
-  echo $1 | quicktype -l typescript --just-types | pbcopy
 }
 
 test_https() {

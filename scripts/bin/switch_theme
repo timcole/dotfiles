@@ -1,0 +1,13 @@
+#!/bin/bash
+colorscheme=$1
+
+if [[ $colorscheme = 'dark' ]]; then
+  cat ~/.config/kitty/one_dark.conf > ~/.config/kitty/colors.conf
+  sed -i '.bak' 's/set background=light/set background=dark/' $HOME/.config/nvim/init.vim
+elif [[ $colorscheme = 'light' ]]; then
+  cat ~/.config/kitty/ayu_light.conf > ~/.config/kitty/colors.conf
+  sed -i '.bak' 's/set background=dark/set background=light/' $HOME/.config/nvim/init.vim
+fi
+
+# reload kitty colorscheme
+/Applications/kitty.app/Contents/MacOS/kitty @ set-colors --all ~/.config/kitty/colors.conf &

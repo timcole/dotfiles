@@ -1,0 +1,8 @@
+#!/usr/bin/env zsh
+export STOW_FOLDERS="kitty,nvim,scripts,skhd,tmux,zsh";
+
+for folder in $(echo $STOW_FOLDERS | sed "s/,/ /g")
+do
+  stow -D $folder
+  stow $folder
+done

@@ -1,0 +1,20 @@
+[user]
+  signingkey = C8FC3C8FEF3119C8
+  name = Timothy Cole
+  email = tim@timcole.me
+
+[core]
+  excludesfile = /Users/tim/.gitignore_global
+
+[url "git@github.com:"]
+  insteadOf = https://github.com
+
+[init]
+  defaultBranch = main
+
+[alias]
+  st = status
+
+[commit]
+  gpgsign = true
+
