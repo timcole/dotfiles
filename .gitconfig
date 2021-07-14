@@ -5,9 +5,7 @@
 
 [alias]
   st = status
-
-[url "ssh://git@git.notify.me"]
-  insteadOf = https://git.notify.me
+  df = diff
 
 [url "ssh://git@github.com"]
   insteadOf = https://github.com

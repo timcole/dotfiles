@@ -34,8 +34,10 @@ inoremap <silent><expr> <C-Space> compe#complete()
 inoremap <silent><expr> <CR>      compe#confirm('<CR>')
 inoremap <silent><expr> <C-e>     compe#close('<C-e>')
 
-" let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
-" let g:completion_trigger_on_delete = 1
-" lua require'lspconfig'.rls.setup{  }
 lua require'lspconfig'.rust_analyzer.setup{  }
 lua require'lspconfig'.tsserver.setup{  }
+lua require'lspconfig'.gopls.setup{  }
+lua require'lspconfig'.graphql.setup{  }
+lua require'lspconfig'.dockerls.setup{  }
+lua require'lspconfig'.elixirls.setup{ cmd = { "/Users/tim/Documents/elixir-ls/language_server.sh" }; }
+lua require'lspconfig'.prismals.setup{  }

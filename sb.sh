@@ -1,5 +1,5 @@
 #!/bin/sh
-CONTEXT="gke_social-blade-website_us-east1_production"
+CONTEXT="SocialBlade"
 NAMESPACE="default"
 SOCIALBLADE_EPOCH="1202446179000"
 
