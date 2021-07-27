@@ -22,6 +22,7 @@ Plug 'prettier/vim-prettier', {
 Plug 'jparise/vim-graphql'
 Plug 'elixir-editors/vim-elixir'
 Plug 'pantharshit00/vim-prisma'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
 Plug 'npxbr/glow.nvim', {'do': ':GlowInstall'}
 
