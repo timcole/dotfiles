@@ -2,7 +2,6 @@ filetype plugin on
 
 call plug#begin(stdpath('data') . '/plugged')
 Plug 'rakr/vim-one'
-Plug 'bagrat/vim-buffet'
 Plug 'tpope/vim-commentary'
 
 Plug 'nvim-lua/popup.nvim'
@@ -27,6 +26,8 @@ Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'npxbr/glow.nvim', {'do': ':GlowInstall'}
 
 Plug 'vimsence/vimsence'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'akinsho/nvim-bufferline.lua'
 call plug#end()
 
 if has('termguicolors')
