@@ -6,3 +6,4 @@ alt + shift - p : $HOME/bin/screenshot
 alt + shift - s : $HOME/bin/spaceshot
 alt + shift - n : $HOME/bin/nuuls
 alt + shift - u : open -a Firefox "https://say.tim.lgbt/?content=$(pbpaste)"
+alt + shift - t : echo ${"$(pbpaste)/vm.tiktok.com/tiktok.tim.rip/v"} | pbcopy

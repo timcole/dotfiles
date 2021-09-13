@@ -28,6 +28,7 @@ Plug 'npxbr/glow.nvim', {'do': ':GlowInstall'}
 Plug 'vimsence/vimsence'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'akinsho/nvim-bufferline.lua'
+Plug 'hoob3rt/lualine.nvim'
 call plug#end()
 
 if has('termguicolors')
@@ -69,6 +70,7 @@ set incsearch
 set inccommand=split
 set showmatch
 set showtabline=1
+set noshowmode
 
 augroup LuaHighlight
   autocmd!
