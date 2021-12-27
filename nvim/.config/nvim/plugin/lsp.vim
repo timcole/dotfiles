@@ -40,5 +40,4 @@ lua require'lspconfig'.gopls.setup{  }
 lua require'lspconfig'.graphql.setup{  }
 lua require'lspconfig'.dockerls.setup{  }
 lua require'lspconfig'.elixirls.setup{ cmd = { "/Users/tim/Documents/elixir-ls/language_server.sh" }; }
-" Literally unuseable https://github.com/neovim/nvim-lspconfig/issues/1043
-" lua require'lspconfig'.prismals.setup{ }
+lua require'lspconfig'.prismals.setup{ }
