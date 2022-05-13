@@ -34,3 +34,4 @@ export LC_ALL=en_US.UTF-8
 export PATH="/Users/tim/bin/:$PATH"
 export PATH="/usr/local/opt/node@14/bin:$PATH"
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"

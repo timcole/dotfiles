@@ -25,11 +25,12 @@ Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
 Plug 'npxbr/glow.nvim', {'do': ':GlowInstall'}
 
-"Plug 'vimsence/vimsence'
 Plug 'andweeb/presence.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'akinsho/nvim-bufferline.lua'
 Plug 'hoob3rt/lualine.nvim'
+
+Plug 'hashivim/vim-terraform'
 call plug#end()
 
 if has('termguicolors')

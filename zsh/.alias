@@ -58,7 +58,7 @@ mc_edit() {
 alias dark="~/.config/kitty/switch_theme.sh dark"
 alias light="~/.config/kitty/switch_theme.sh light"
 
-alias s="ssh"
+alias s="TERM=xterm-256color ssh"
 alias k="kubectl"
 alias kn="kubens"
 alias kc="kubectx"
