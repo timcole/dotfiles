@@ -64,3 +64,5 @@ alias kn="kubens"
 alias kc="kubectx"
 
 alias todo="ack \"TODO\(timcole\):\" --ignore-dir=.next --ignore-dir=node_modules --ignore-dir=target --ignore-dir=dist --ignore-dir=build"
+
+alias idrac="/usr/local/bin/javaws -nosecurity ~/Desktop/viewer.jnlp"

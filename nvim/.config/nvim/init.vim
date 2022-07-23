@@ -17,7 +17,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'prettier/vim-prettier', {
       \ 'do': 'npm install',
-      \ 'for': ['javascript', 'typescript', 'typescriptreact', 'javascriptreact'] }
+      \ 'for': ['javascript', 'typescript', 'typescriptreact', 'javascriptreact', 'astro'] }
 Plug 'jparise/vim-graphql'
 Plug 'elixir-editors/vim-elixir'
 Plug 'pantharshit00/vim-prisma'
@@ -31,6 +31,8 @@ Plug 'akinsho/nvim-bufferline.lua'
 Plug 'hoob3rt/lualine.nvim'
 
 Plug 'hashivim/vim-terraform'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'williamboman/nvim-lsp-installer'
 call plug#end()
 
 if has('termguicolors')
