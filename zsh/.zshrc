@@ -43,6 +43,8 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 export BUN_INSTALL="/Users/tim/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+eval "$(fnm env --use-on-cd)"
+
 export NOMAD_ADDR=http://10.10.0.16:4646
 export CONSUL_HTTP_ADDR=http://10.10.0.16:8500
 export VAULT_ADDR=https://10.10.0.16:8200

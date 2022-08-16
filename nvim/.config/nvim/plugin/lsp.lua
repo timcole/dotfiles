@@ -5,10 +5,10 @@ lsp.tsserver.setup {
   on_attach = on_attach,
   root_dir = lsp.util.root_pattern("package.json"),
 }
-lsp.denols.setup {
-  on_attach = on_attach,
-  root_dir = lsp.util.root_pattern("deno.json", "deno.jsonc"),
-}
+-- lsp.denols.setup {
+--   on_attach = on_attach,
+--   root_dir = lsp.util.root_pattern("deno.json", "deno.jsonc"),
+-- }
 lsp.gopls.setup{  }
 lsp.graphql.setup{  }
 lsp.dockerls.setup{  }
