@@ -27,15 +27,6 @@ vim() {
   fi
 }
 
-gachi() {
-  cd ~/Music/gachi/
-  youtube-dl --ignore-errors --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" $1
-}
-
-test_https() {
-  curl --insecure -vvI https://$1 -H "Host: $2" 2>&1 | awk 'BEGIN { cert=0 } /^\* SSL connection/ { cert=1 } /^\*/ { if (cert) print }'
-}
-
 mc_edit() {
   if [ -z "$1" ]
   then
@@ -54,9 +45,6 @@ mc_edit() {
     mc cp /tmp/$TMP.${1##*.} $2
   fi
 }
-
-alias dark="~/.config/kitty/switch_theme.sh dark"
-alias light="~/.config/kitty/switch_theme.sh light"
 
 alias s="TERM=xterm-256color ssh"
 alias k="kubectl"

@@ -4,5 +4,5 @@ require("presence"):setup({
   buttons = false,
   editing_text = "Editing %s",
   workspace_text = "Workspace %s",
-  blacklist = { 'tiktok', 'discord' }
+  show_time = false,
 })
