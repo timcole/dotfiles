@@ -3,6 +3,7 @@ alias icloud="~/Library/Mobile\ Documents/com~apple~CloudDocs/"
 alias cat="bat --theme TwoDark"
 # Remove all docker containers
 alias dk="docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs docker rm"
+alias rust-musl-builder='docker run --rm -it -v "$(pwd)":/volume clux/muslrust:stable'
 
 if [ $TERM = 'xterm-kitty' ]; then
   export PATH=/Applications/kitty.app/Contents/MacOS/kitty:$PATH
