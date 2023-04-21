@@ -1,8 +1,14 @@
-require("bufferline").setup({
+local bufferline = require('bufferline')
+
+bufferline.setup({
+  highlights = {
+    fill = { bg = "#161d25" },
+  },
   options = {
     diagnostics = "nvim_lsp",
     always_show_bufferline = true,
-    buffer_close_icon = ''
+    modified_icon = "",
+    tab_size = 22,
   },
 })
 

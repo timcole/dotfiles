@@ -4,5 +4,7 @@ export STOW_FOLDERS="kitty,nvim,scripts,skhd,tmux,zsh";
 for folder in $(echo $STOW_FOLDERS | sed "s/,/ /g")
 do
   stow -D $folder
-  stow $folder
+  stow -t $HOME $folder
 done
+
+stow -t $HOME git

@@ -5,7 +5,6 @@ ZSH_THEME="igeek-modest"
 
 plugins=(
   git
-  golang
   dotenv
   node
   sudo
@@ -30,6 +29,7 @@ source ~/.alias
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export LC_ALL=en_US.UTF-8
+export GPG_TTY=$(tty)
 
 export PATH="/Users/tim/bin/:$PATH"
 export PATH="/usr/local/opt/node@14/bin:$PATH"
@@ -45,3 +45,5 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 eval "$(fnm env --use-on-cd)"
 eval "$(op completion zsh)"; compdef _op op
+
+autoload -U compinit && compinit
