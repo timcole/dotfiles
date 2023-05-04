@@ -1,4 +1,5 @@
 export ZSH=$HOME/.oh-my-zsh
+export HISTSIZE=100000
 
 # ZSH_THEME="agnoster"
 ZSH_THEME="igeek-modest"
@@ -9,6 +10,8 @@ plugins=(
   node
   sudo
 )
+
+export ZSH_DOTENV_PROMPT='false'
 
 source $ZSH/oh-my-zsh.sh
 

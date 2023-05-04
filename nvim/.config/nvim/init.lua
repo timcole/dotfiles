@@ -6,6 +6,7 @@ require('custom.tabs')
 require('custom.telescope')
 require('custom.treesitter')
 require('custom.discord')
+require('custom.null_ls')
 
 vim.opt.termguicolors = true
 

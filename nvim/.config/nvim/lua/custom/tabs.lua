@@ -8,7 +8,7 @@ bufferline.setup({
     diagnostics = "nvim_lsp",
     always_show_bufferline = true,
     modified_icon = "",
-    tab_size = 22,
+    -- tab_size = 22,
   },
 })
 
