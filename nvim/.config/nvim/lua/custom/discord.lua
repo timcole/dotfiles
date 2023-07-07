@@ -4,5 +4,5 @@ require("presence"):setup({
   buttons = false,
   editing_text = "Editing %s",
   workspace_text = "Workspace %s",
-  show_time = false,
+  show_time = true,
 })

@@ -48,7 +48,6 @@ autocmd('TextYankPost', {
   end,
 })
 
-
 local onedark = require('onedark')
 onedark.setup {
   style = 'cool',

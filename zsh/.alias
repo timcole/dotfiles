@@ -10,10 +10,10 @@ if [ $TERM = 'xterm-kitty' ]; then
 
   autoload -Uz compinit
   compinit
-  "/Applications/kitty.app/Contents/MacOS/kitty" + complete setup zsh | source /dev/stdin
+  # "/Applications/kitty.app/Contents/MacOS/kitty" + complete setup zsh | source /dev/stdin
 
   # alias kitty="/Applications/kitty.app/Contents/MacOS/kitty"
-  alias ssh="kitty +kitten ssh"
+  # alias ssh="kitty +kitten ssh"
 fi
 
 vim() {
