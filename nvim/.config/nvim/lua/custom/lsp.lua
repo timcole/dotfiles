@@ -51,6 +51,7 @@ lsp.dockerls.setup{}
 lsp.prismals.setup{}
 lsp.tailwindcss.setup{}
 lsp.bufls.setup{}
+lsp.omnisharp.setup{}
 
 require('luasnip.loaders.from_vscode').lazy_load()
 cmp.setup({

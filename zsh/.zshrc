@@ -1,5 +1,6 @@
 export ZSH=$HOME/.oh-my-zsh
 export HISTSIZE=100000
+export SAVEHIST=100000
 
 # ZSH_THEME="agnoster"
 ZSH_THEME="igeek-modest"

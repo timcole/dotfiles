@@ -87,7 +87,9 @@ return require('packer').startup(function(use)
 
   use {
     "windwp/nvim-autopairs",
-    config = function() require("nvim-autopairs").setup {} end
+    config = function() require("nvim-autopairs").setup {
+      disable_filetype = { "rust" }
+    } end
   }
 
   if packer_bootstrap then
