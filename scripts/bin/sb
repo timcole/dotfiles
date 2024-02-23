@@ -1,5 +1,5 @@
 #!/bin/sh
-CONTEXT="gke_social-blade-website_us-east1_production"
+CONTEXT="socialblade"
 NAMESPACE="default"
 SOCIALBLADE_EPOCH="1202446179000"
 
@@ -7,7 +7,6 @@ sb_help(){
   echo "Usage: sb <command> [options]\n"
   echo "Commands:"
   echo "  snow  Convert snowflake to timestamp"
-  echo "  fwd   Port forward services"
   echo "  sh    Exec /bin/sh on a deployment"
 }
 
@@ -17,16 +16,8 @@ sb_snow() {
     exit 1
   fi
 
-  epoch=$(($1 >> 23 + $SOCIALBLADE_EPOCH))
+  epoch=$((($1 >> 23) + $SOCIALBLADE_EPOCH))
   date -r $(($epoch/1000))
-}
-
-sb_fwd() {
-  if [[ $# -eq 0 ]] ; then
-    sudo -E kubefwd svc -x $CONTEXT -n $NAMESPACE
-  else
-    sudo -E kubefwd svc -x $CONTEXT -n $NAMESPACE -l "app in ($1)"
-  fi
 }
 
 sb_sh() {
@@ -53,6 +44,28 @@ sb_log() {
   else
     kubectl logs --context $CONTEXT -n $NAMESPACE -f $1 --container $2 --timestamps
   fi
+}
+
+sb_pull() {
+  if [[ $# -eq 0 ]] ; then
+    echo 'missing type web, api, realtime'
+    exit 1
+  fi
+
+  case $1 in
+    web)
+      gcloud compute instances list | grep sb-website | awk '{print $1}' | xargs -P 0 -I{} gcloud compute ssh t@{} --zone us-east1-d --command "sudo -u www-data git -C /var/www/html/socialblade.com pull"
+      ;;
+    api)
+      gcloud compute instances list | grep sb-api | awk '{print $1}' | xargs -P 0 -I{} gcloud compute ssh t@{} --zone us-east1-d --command "sudo -u www-data git -C /var/www/html/api pull"
+      ;;
+    realtime)
+      gcloud compute instances list | grep sb-realtime | awk '{print $1}' | xargs -P 0 -I{} gcloud compute ssh t@{} --zone us-east1-d --command "sudo -u www-data git -C /var/www/html/realtime pull"
+      ;;
+    *)
+      echo -n "Invalid Option: web, api, realtime"
+      ;;
+  esac
 }
 
 sub=$1

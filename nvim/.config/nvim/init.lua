@@ -7,6 +7,7 @@ require('custom.telescope')
 require('custom.treesitter')
 require('custom.discord')
 require('custom.null_ls')
+require('custom.go')
 
 vim.opt.termguicolors = true
 

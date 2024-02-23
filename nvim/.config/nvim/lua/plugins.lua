@@ -58,8 +58,31 @@ return require('packer').startup(function(use)
   use 'folke/todo-comments.nvim'
 
   use 'rust-lang/rust.vim'
-  use 'tpope/vim-fugitive'
-  use 'airblade/vim-gitgutter'
+  use "sindrets/diffview.nvim"
+
+  use {
+    "NeogitOrg/neogit",
+    requires = {
+      "nvim-lua/plenary.nvim",
+      "sindrets/diffview.nvim",
+      "nvim-telescope/telescope.nvim"
+    },
+    config = function() require("neogit").setup() end
+  }
+  use {
+    "lewis6991/gitsigns.nvim",
+    config = function()
+      require("gitsigns").setup({
+        current_line_blame = true,
+        current_line_blame_opts = {
+          delay = 100
+        }
+      })
+    end
+  }
+  
+  use 'ray-x/guihua.lua'
+  use 'ray-x/go.nvim'
 
   use 'pantharshit00/vim-prisma'
 
