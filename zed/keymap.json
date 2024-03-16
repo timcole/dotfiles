@@ -1,0 +1,39 @@
+[
+  {
+    "context": "Terminal",
+    "bindings": {
+      "space": ["terminal::SendText", " "],
+      "alt-a h": "terminal_panel::ToggleFocus",
+      "alt-a z": "workspace::ToggleZoom"
+    }
+  },
+  {
+    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+    "bindings": {
+      "shift-w": "pane::CloseActiveItem",
+      "shift-tab": "pane::ActivatePrevItem",
+      "tab": "pane::ActivateNextItem",
+      "ctrl-p": "file_finder::Toggle",
+      ", c": "editor::ToggleComments",
+      ", f": "file_finder::Toggle",
+      "ctrl-t": [
+        "workspace::SendKeystrokes",
+        ", p s \\/\\/ space (FIXME|TODO|HACK|WARN|PERF|NOTE|TEST): alt-cmd-g enter"
+      ],
+      ", r": [
+        "workspace::SendKeystrokes",
+        "ctrl-` cargo space run enter ctrl-`"
+      ],
+      ", p s": "pane::DeploySearch",
+      "ctrl-k": "editor::Hover",
+      "alt-a l": "terminal_panel::ToggleFocus",
+      "alt-a z": "workspace::ToggleZoom"
+    }
+  },
+  {
+    "bindings": {
+      "cmd-?": null,
+      "cmd->": null
+    }
+  }
+]

@@ -1,0 +1,84 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "confirm_quit": true,
+  "vim_mode": true,
+  "theme": "Modest Dark",
+  "ui_font_size": 16,
+  "ui_font_family": "Operator Mono Lig",
+  "buffer_font_size": 15,
+  "buffer_font_family": "Operator Mono Lig",
+  "cursor_blink": false,
+  "relative_line_numbers": true,
+  "scrollbar": {
+    "show": "never"
+  },
+  "git": {
+    "git_gutter": "tracked_files"
+  },
+  "vertical_scroll_margin": 0,
+  "remove_trailing_whitespace_on_save": true,
+  "show_whitespaces": "all",
+  "terminal": {
+    "dock": "right",
+    "default_width": 770
+  },
+  "assistant": {
+    "button": false
+  },
+  "features": {
+    "copilot": false
+  },
+  "lsp": {
+    "typescript-language-server": {
+      "initialization_options": {
+        "maxTsServerMemory": 8192
+      }
+    }
+  },
+  "languages": {
+    "Rust": {
+      "tab_size": 2,
+      "wrap_guides": [80]
+    },
+    "TOML": {
+      "tab_size": 2
+    },
+    "proto": {
+      "tab_size": 2
+    },
+    "Prisma": {
+      "tab_size": 2
+    },
+    "TSX": {
+      "wrap_guides": [80]
+    },
+    "TypeScript": {
+      "wrap_guides": [80]
+    }
+  },
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+    "**/.cargo",
+    "**/.next",
+    "**/target",
+    "**/dist",
+    "**/node_modules"
+  ],
+  "chat_panel": {
+    "dock": "bottom"
+  }
+}
