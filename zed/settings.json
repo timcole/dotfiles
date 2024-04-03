@@ -12,7 +12,7 @@
   "theme": "Modest Dark",
   "ui_font_size": 16,
   "ui_font_family": "Operator Mono Lig",
-  "buffer_font_size": 15,
+  "buffer_font_size": 16,
   "buffer_font_family": "Operator Mono Lig",
   "cursor_blink": false,
   "relative_line_numbers": true,
@@ -30,6 +30,7 @@
     "default_width": 770
   },
   "assistant": {
+    "version": "1",
     "button": false
   },
   "features": {
@@ -42,6 +43,7 @@
       }
     }
   },
+  "soft_wrap": "none",
   "languages": {
     "Rust": {
       "tab_size": 2,

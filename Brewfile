@@ -1,15 +1,18 @@
 tap "1password/tap"
 tap "boz/repo"
 tap "hashicorp/tap"
+tap "hcavarsan/kftray"
 tap "homebrew/bundle"
 tap "homebrew/services"
 tap "koekeishiya/formulae"
 tap "oven-sh/bun"
+brew "act"
 brew "awscli"
 brew "bat"
 brew "btop"
 brew "gnutls"
 brew "leptonica"
+brew "openvino"
 brew "tesseract"
 brew "ffmpeg"
 brew "fnm"
@@ -29,14 +32,17 @@ brew "kubernetes-cli"
 brew "kubectx"
 brew "mas"
 brew "minicom"
+brew "mkcert"
 brew "mtr"
 brew "ncdu"
 brew "neofetch"
 brew "neovim"
 brew "nmap"
+brew "nss"
 brew "oha"
 brew "openssl@1.1"
 brew "pinentry-mac"
+brew "protobuf"
 brew "pssh"
 brew "rclone"
 brew "ripgrep"
@@ -53,14 +59,16 @@ cask "1password-cli"
 cask "kitty"
 cask "nrlquaker-winbox"
 cask "orbstack"
+mas "Flighty", id: 1358823008
 mas "Keynote", id: 409183694
 mas "LightBlue", id: 557428110
 mas "Medis", id: 1579200037
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Parcel", id: 639968404
+mas "Remote Ripple", id: 1253403918
 mas "Sleep Control Center", id: 946798523
 mas "Speedtest", id: 1153157709
 mas "Telegram Lite", id: 946399090
+mas "TestFlight", id: 899247664
 mas "WireGuard", id: 1451685025
-mas "Wondershare PDFelement", id: 1470732135
