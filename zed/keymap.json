@@ -4,7 +4,8 @@
     "bindings": {
       "space": ["terminal::SendText", " "],
       "alt-a h": "terminal_panel::ToggleFocus",
-      "alt-a z": "workspace::ToggleZoom"
+      "alt-a z": "workspace::ToggleZoom",
+      "cmd-t": "workspace::NewTerminal"
     }
   },
   {

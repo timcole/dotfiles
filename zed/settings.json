@@ -16,12 +16,13 @@
   "buffer_font_family": "Operator Mono Lig",
   "cursor_blink": false,
   "relative_line_numbers": true,
-  "scrollbar": {
-    "show": "never"
-  },
+  "restore_on_startup": "none",
+  "scrollbar": { "show": "never" },
   "git": {
-    "git_gutter": "tracked_files"
+    "git_gutter": "tracked_files",
+    "inline_blame": { "enabled": false }
   },
+  "indent_guides": { "enabled": false },
   "vertical_scroll_margin": 0,
   "remove_trailing_whitespace_on_save": true,
   "show_whitespaces": "all",
@@ -31,39 +32,20 @@
   },
   "assistant": {
     "version": "1",
-    "button": false
+    "button": false,
+    "enabled": false,
+    "dock": "bottom"
   },
-  "features": {
-    "copilot": false
-  },
-  "lsp": {
-    "typescript-language-server": {
-      "initialization_options": {
-        "maxTsServerMemory": 8192
-      }
-    }
-  },
+  "features": { "copilot": false },
+  "outline_panel": { "default_width": 240 },
   "soft_wrap": "none",
+  "wrap_guides": [80],
+  "tab_size": 2,
   "languages": {
-    "Rust": {
-      "tab_size": 2,
-      "wrap_guides": [80]
-    },
-    "TOML": {
-      "tab_size": 2
-    },
-    "proto": {
-      "tab_size": 2
-    },
-    "Prisma": {
-      "tab_size": 2
-    },
-    "TSX": {
-      "wrap_guides": [80]
-    },
-    "TypeScript": {
-      "wrap_guides": [80]
-    }
+    "Rust": { "tab_size": 2 },
+    "TOML": { "tab_size": 2 },
+    "proto": { "tab_size": 2 },
+    "Prisma": { "tab_size": 2 }
   },
   "file_scan_exclusions": [
     "**/.git",
@@ -80,7 +62,7 @@
     "**/dist",
     "**/node_modules"
   ],
-  "chat_panel": {
-    "dock": "bottom"
-  }
+  "chat_panel": { "dock": "bottom" },
+  "project_panel": { "indent_size": 10 },
+  "tab_bar": { "show_nav_history_buttons": false }
 }

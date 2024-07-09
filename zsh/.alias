@@ -4,6 +4,7 @@ alias cat="bat --theme TwoDark"
 # Remove all docker containers
 alias dk="docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs docker rm"
 alias rust-musl-builder='docker run --rm -it -v "$(pwd)":/home/rust/src ekidd/rust-musl-builder'
+alias rustscan='docker run -it --rm --name rustscan rustscan/rustscan:2.1.1'
 
 if [ $TERM = 'xterm-kitty' ]; then
   export PATH=/Applications/kitty.app/Contents/MacOS/kitty:$PATH
