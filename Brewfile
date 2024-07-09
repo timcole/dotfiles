@@ -10,9 +10,9 @@ brew "act"
 brew "awscli"
 brew "bat"
 brew "btop"
+brew "cloc"
 brew "gnutls"
 brew "leptonica"
-brew "openvino"
 brew "tesseract"
 brew "ffmpeg"
 brew "fnm"
@@ -30,6 +30,7 @@ brew "ipmitool"
 brew "jq"
 brew "kubernetes-cli"
 brew "kubectx"
+brew "llvm@17"
 brew "mas"
 brew "minicom"
 brew "mkcert"
@@ -41,21 +42,25 @@ brew "nmap"
 brew "nss"
 brew "oha"
 brew "openssl@1.1"
+brew "openvino"
 brew "pinentry-mac"
 brew "protobuf"
 brew "pssh"
 brew "rclone"
 brew "ripgrep"
+brew "rust"
 brew "shodan"
 brew "stow"
 brew "telnet"
 brew "tmux"
 brew "watch"
+brew "websocat"
 brew "yt-dlp"
 brew "hashicorp/tap/packer"
 brew "koekeishiya/formulae/skhd"
 brew "oven-sh/bun/bun"
 cask "1password-cli"
+cask "aptakube"
 cask "kitty"
 cask "nrlquaker-winbox"
 cask "orbstack"
@@ -66,9 +71,9 @@ mas "Medis", id: 1579200037
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Parcel", id: 639968404
-mas "Remote Ripple", id: 1253403918
 mas "Sleep Control Center", id: 946798523
 mas "Speedtest", id: 1153157709
 mas "Telegram Lite", id: 946399090
 mas "TestFlight", id: 899247664
 mas "WireGuard", id: 1451685025
+mas "Xcode", id: 497799835
