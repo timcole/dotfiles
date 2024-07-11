@@ -62,6 +62,7 @@
     "**/dist",
     "**/node_modules"
   ],
+  "jupyter": { "dock": "bottom", "enabled": false },
   "chat_panel": { "dock": "bottom" },
   "project_panel": { "indent_size": 10 },
   "tab_bar": { "show_nav_history_buttons": false }
