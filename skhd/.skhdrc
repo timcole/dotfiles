@@ -3,5 +3,4 @@ alt - return : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d
 
 # screenshot
 alt + shift - p : $HOME/bin/screenshot
-alt + shift - s : $HOME/bin/spaceshot
 alt + shift - n : $HOME/bin/nuuls

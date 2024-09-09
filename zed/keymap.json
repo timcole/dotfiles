@@ -34,7 +34,8 @@
       ", p s": "pane::DeploySearch",
       "ctrl-k": "editor::Hover",
       "alt-a l": "terminal_panel::ToggleFocus",
-      "alt-a z": "workspace::ToggleZoom"
+      "alt-a z": "workspace::ToggleZoom",
+      "ctrl-j": "editor::JoinLines"
     }
   },
   {
