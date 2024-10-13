@@ -8,6 +8,8 @@ sb_help(){
   echo "Commands:"
   echo "  snow  Convert snowflake to timestamp"
   echo "  sh    Exec /bin/sh on a deployment"
+  echo "  log   Stream logs from deployment"
+  echo "  pull  Pull on web/api/realtime gcp"
 }
 
 sb_snow() {
@@ -54,13 +56,13 @@ sb_pull() {
 
   case $1 in
     web)
-      gcloud compute instances list | grep sb-website | awk '{print $1}' | xargs -P 0 -I{} gcloud compute ssh t@{} --zone us-east1-d --command "sudo -u www-data git -C /var/www/html/socialblade.com pull"
+      gcloud compute instances list --format="value(NAME)" --filter="name:(sb-website-*)" | xargs -P 0 -I{} gcloud compute ssh t@{} --zone us-east1-d --command "sudo -u www-data git -C /var/www/html/socialblade.com pull"
       ;;
     api)
-      gcloud compute instances list | grep sb-api | awk '{print $1}' | xargs -P 0 -I{} gcloud compute ssh t@{} --zone us-east1-d --command "sudo -u www-data git -C /var/www/html/api pull"
+      gcloud compute instances list --format="value(NAME)" --filter="name:(sb-api-*)" | xargs -P 0 -I{} gcloud compute ssh t@{} --zone us-east1-d --command "sudo -u www-data git -C /var/www/html/api pull"
       ;;
     realtime)
-      gcloud compute instances list | grep sb-realtime | awk '{print $1}' | xargs -P 0 -I{} gcloud compute ssh t@{} --zone us-east1-d --command "sudo -u www-data git -C /var/www/html/realtime pull"
+      gcloud compute instances list --format="value(NAME)" --filter="name:(sb-realtime-*)" | xargs -P 0 -I{} gcloud compute ssh t@{} --zone us-east1-d --command "sudo -u www-data git -C /var/www/html/realtime pull"
       ;;
     *)
       echo -n "Invalid Option: web, api, realtime"

@@ -49,7 +49,8 @@
     "Rust": { "tab_size": 2 },
     "TOML": { "tab_size": 2 },
     "proto": { "tab_size": 2 },
-    "Prisma": { "tab_size": 2 }
+    "Prisma": { "tab_size": 2 },
+    "HCL": { "tab_size": 2 }
   },
   "file_scan_exclusions": [
     "**/.git",

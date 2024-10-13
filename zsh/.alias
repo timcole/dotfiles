@@ -55,4 +55,8 @@ alias kc="kubectx"
 
 alias todo="ack \"TODO\(timcole\):\" --ignore-dir=.next --ignore-dir=node_modules --ignore-dir=target --ignore-dir=dist --ignore-dir=build"
 
-alias idrac="/usr/local/bin/javaws -nosecurity ~/Desktop/viewer.jnlp"
+check_cert() {
+  local domain=$1
+  local ip=$2
+  curl -k --resolve ${domain}:443:${ip} https://${domain} -vI 2>&1 | awk '/Server certificate/,/SSL certificate verify/'
+}
