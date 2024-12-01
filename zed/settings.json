@@ -22,7 +22,7 @@
   "relative_line_numbers": true,
   "restore_on_startup": "none",
   "ssh_connections": [
-    { "host": "198.169.173.66", "erojects": [{ "paths": ["~/packer"] }] }
+    { "host": "198.169.173.66", "projects": [{ "paths": ["~/packer"] }] }
   ],
   "scrollbar": { "show": "never" },
   "git": {
