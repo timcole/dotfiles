@@ -21,6 +21,9 @@
   "cursor_blink": false,
   "relative_line_numbers": true,
   "restore_on_startup": "none",
+  "ssh_connections": [
+    { "host": "198.169.173.66", "erojects": [{ "paths": ["~/packer"] }] }
+  ],
   "scrollbar": { "show": "never" },
   "git": {
     "git_gutter": "tracked_files",
@@ -32,7 +35,8 @@
   "show_whitespaces": "all",
   "terminal": {
     "dock": "right",
-    "default_width": 770
+    "default_width": 770,
+    "toolbar": { "breadcrumbs": false }
   },
   "assistant": {
     "version": "2",
@@ -50,7 +54,8 @@
     "TOML": { "tab_size": 2 },
     "proto": { "tab_size": 2 },
     "Prisma": { "tab_size": 2 },
-    "HCL": { "tab_size": 2 }
+    "HCL": { "tab_size": 2 },
+    "YAML": { "format_on_save": "prettier" }
   },
   "file_scan_exclusions": [
     "**/.git",
@@ -71,5 +76,6 @@
   "chat_panel": { "dock": "bottom" },
   "project_panel": { "indent_size": 10 },
   "tab_bar": { "show_nav_history_buttons": false },
+  "tabs": { "file_icons": true },
   "show_signature_help_after_edits": false
 }
