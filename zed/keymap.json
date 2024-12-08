@@ -31,7 +31,7 @@
         "workspace::SendKeystrokes",
         "ctrl-` cargo space run enter ctrl-`"
       ],
-      ", p s": "pane::DeploySearch",
+      ", p s": "workspace::NewSearch",
       "ctrl-k": "editor::Hover",
       "alt-a l": "terminal_panel::ToggleFocus",
       "alt-a z": "workspace::ToggleZoom",
