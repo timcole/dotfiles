@@ -1,6 +1,9 @@
-alt - return : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d ~
-# alt - return : "/Applications/iTerm 2.app/Contents/MacOS/iTerm2"
+alt - return : open /Applications/Ghostty.app
 
 # screenshot
 alt + shift - p : $HOME/bin/screenshot
 alt + shift - n : $HOME/bin/nuuls
+
+.blacklist [
+    "ghostty"
+]

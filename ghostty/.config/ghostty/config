@@ -1,0 +1,22 @@
+theme = "dark:Modest Dark,light:Modest Light"
+
+cursor-style = block
+
+font-family = "Operator Mono Lig Book"
+font-family-bold = "Operator Mono Book"
+font-family-italic = "Operator Mono Lig Book Italic"
+font-family-bold-italic = "Operator Mono Lig Book Italic"
+
+font-size = 15
+
+macos-titlebar-proxy-icon = "hidden"
+
+keybind="global:alt+enter=new_window"
+
+auto-update = "download"
+macos-option-as-alt = true
+
+quit-after-last-window-closed = true
+
+window-height = 45
+window-width = 150
