@@ -7,6 +7,7 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "icon_theme": "Material Icon Theme",
   "confirm_quit": true,
   "vim_mode": true,
   "theme": {
@@ -16,14 +17,12 @@
   },
   "ui_font_size": 16,
   "ui_font_family": "Operator Mono Lig",
-  "buffer_font_size": 16,
+  "buffer_font_size": null,
   "buffer_font_family": "Operator Mono Lig",
   "cursor_blink": false,
   "relative_line_numbers": true,
   "restore_on_startup": "none",
-  "ssh_connections": [
-    { "host": "198.169.173.66", "projects": [{ "paths": ["~/packer"] }] }
-  ],
+  "ssh_connections": [],
   "scrollbar": { "show": "never" },
   "git": {
     "git_gutter": "tracked_files",
@@ -44,7 +43,7 @@
     "enabled": false,
     "dock": "bottom"
   },
-  "features": { "inline_completion_provider": "none", "copilot": false },
+  "features": { "edit_prediction_provider": "none", "copilot": false },
   "outline_panel": { "default_width": 240 },
   "soft_wrap": "none",
   "wrap_guides": [80],
