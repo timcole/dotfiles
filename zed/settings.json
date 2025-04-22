@@ -7,7 +7,12 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "icon_theme": "Material Icon Theme",
+  "show_edit_predictions": false,
+  "icon_theme": {
+    "mode": "system",
+    "dark": "Material Icon Theme",
+    "light": "Material Icon Theme"
+  },
   "confirm_quit": true,
   "vim_mode": true,
   "theme": {
@@ -28,6 +33,7 @@
     "git_gutter": "tracked_files",
     "inline_blame": { "enabled": false }
   },
+  "git_panel": { "dock": "bottom" },
   "indent_guides": { "enabled": false },
   "vertical_scroll_margin": 0,
   "remove_trailing_whitespace_on_save": true,
@@ -76,5 +82,12 @@
   "project_panel": { "indent_size": 10 },
   "tab_bar": { "show_nav_history_buttons": false },
   "tabs": { "file_icons": true },
-  "show_signature_help_after_edits": false
+  "show_signature_help_after_edits": false,
+  "lsp": {
+    "discord_presence": {
+      "initialization_options": {
+        "idle": { "timeout": 1800, "action": "clear_activity" }
+      }
+    }
+  }
 }
