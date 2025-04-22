@@ -18,5 +18,5 @@ macos-option-as-alt = true
 
 quit-after-last-window-closed = true
 
-window-height = 45
-window-width = 150
+window-height = 50
+window-width = 168
