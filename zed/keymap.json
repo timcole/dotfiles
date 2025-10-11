@@ -18,7 +18,6 @@
     "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
     "bindings": {
       "shift-w": "pane::CloseActiveItem",
-      "shift-tab": "pane::ActivatePrevItem",
       "tab": "pane::ActivateNextItem",
       "ctrl-p": "file_finder::Toggle",
       ", c": "editor::ToggleComments",

@@ -43,13 +43,12 @@
     "default_width": 770,
     "toolbar": { "breadcrumbs": false }
   },
-  "assistant": {
-    "version": "2",
+  "agent": {
     "button": false,
     "enabled": false,
     "dock": "bottom"
   },
-  "features": { "edit_prediction_provider": "none", "copilot": false },
+  "features": { "edit_prediction_provider": "none" },
   "outline_panel": { "default_width": 240 },
   "soft_wrap": "none",
   "wrap_guides": [80],
@@ -60,7 +59,7 @@
     "proto": { "tab_size": 2 },
     "Prisma": { "tab_size": 2 },
     "HCL": { "tab_size": 2 },
-    "YAML": { "format_on_save": "prettier" }
+    "YAML": { "format_on_save": "on", "formatter": "prettier" }
   },
   "file_scan_exclusions": [
     "**/.git",
@@ -77,8 +76,7 @@
     "**/dist",
     "**/node_modules"
   ],
-  "jupyter": { "dock": "bottom", "enabled": false },
-  "chat_panel": { "dock": "bottom" },
+  "jupyter": { "enabled": false },
   "project_panel": { "indent_size": 10 },
   "tab_bar": { "show_nav_history_buttons": false },
   "tabs": { "file_icons": true },
