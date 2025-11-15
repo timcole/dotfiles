@@ -19,6 +19,7 @@ macos-option-as-alt = true
 quit-after-last-window-closed = true
 
 shell-integration = zsh
+shell-integration-features = ssh-env
 
 window-height = 50
 window-width = 168

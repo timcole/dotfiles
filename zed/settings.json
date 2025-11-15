@@ -7,6 +7,8 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "disable_ai": false,
+  "show_wrap_guides": true,
   "show_edit_predictions": false,
   "icon_theme": {
     "mode": "system",
@@ -25,7 +27,7 @@
   "buffer_font_size": null,
   "buffer_font_family": "Operator Mono Lig",
   "cursor_blink": false,
-  "relative_line_numbers": true,
+  "relative_line_numbers": "enabled",
   "restore_on_startup": "none",
   "ssh_connections": [],
   "scrollbar": { "show": "never" },
@@ -44,9 +46,13 @@
     "toolbar": { "breadcrumbs": false }
   },
   "agent": {
-    "button": false,
-    "enabled": false,
-    "dock": "bottom"
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
+    },
+    "button": true,
+    "enabled": true,
+    "dock": "right"
   },
   "features": { "edit_prediction_provider": "none" },
   "outline_panel": { "default_width": 240 },

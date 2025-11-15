@@ -90,5 +90,6 @@ mas "Parcel", id: 375589283
 mas "Sleep Control Center", id: 946798523
 mas "Speedtest", id: 1153157709
 mas "Telegram Lite", id: 946399090
+mas "TestFlight", id: 899247664
 mas "WireGuard", id: 1451685025
 mas "Xcode", id: 497799835

@@ -6,30 +6,8 @@ alias dk="docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs docker rm"
 alias rust-musl-builder='docker run --rm -it -v "$(pwd)":/home/rust/src ekidd/rust-musl-builder'
 alias rustscan='docker run -it --rm --name rustscan rustscan/rustscan:2.1.1'
 
-if [ $TERM = 'xterm-kitty' ]; then
-  export PATH=/Applications/kitty.app/Contents/MacOS/kitty:$PATH
-
-  autoload -Uz compinit
-  compinit
-  # "/Applications/kitty.app/Contents/MacOS/kitty" + complete setup zsh | source /dev/stdin
-
-  # alias kitty="/Applications/kitty.app/Contents/MacOS/kitty"
-  # alias ssh="kitty +kitten ssh"
-fi
-
-vim() {
-  if [ -z "$1" ] && git status
-  then
-     nvim +"Telescope git_files"
-  elif [ -z "$1" ]
-  then
-     nvim +"Telescope find_files"
-  else
-     nvim $1
-  fi
-}
-
-alias s="TERM=xterm-256color ssh"
+alias vim="nvim"
+alias s="ssh"
 alias k="kubectl"
 alias kn="kubens"
 alias kc="kubectx"
@@ -41,3 +19,5 @@ check_cert() {
   local ip=$2
   curl -k --resolve ${domain}:443:${ip} https://${domain} -vI 2>&1 | awk '/Server certificate/,/SSL certificate verify/'
 }
+
+awhois() { whois -h bgp.tools " -v $*" }
