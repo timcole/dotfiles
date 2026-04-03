@@ -1,11 +1,11 @@
 require('plugins')
 require('custom.keys')
-require('custom.lsp')
+-- require('custom.lsp')
 require('custom.line')
 -- require('custom.tabs')
 require('custom.telescope')
 require('custom.treesitter')
-require('custom.discord')
+-- require('custom.discord')
 require('custom.null_ls')
 -- require('custom.go')
 

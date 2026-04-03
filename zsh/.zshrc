@@ -16,7 +16,7 @@ export ZSH_DOTENV_PROMPT='false'
 
 source $ZSH/oh-my-zsh.sh
 
-export EDITOR='nvim'
+export EDITOR='zed'
 
 # Golang
 export GOPATH=$HOME/go
@@ -52,8 +52,3 @@ eval "$(op completion zsh)"; compdef _op op
 
 autoload -U compinit && compinit
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/tim/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/tim/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/tim/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/tim/google-cloud-sdk/completion.zsh.inc'; fi

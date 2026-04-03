@@ -2,10 +2,10 @@ theme = "dark:Modest Dark,light:Modest Light"
 
 cursor-style = block
 
-font-family = "Operator Mono Lig Book"
+font-family = "Operator Mono Book"
 font-family-bold = "Operator Mono Book"
-font-family-italic = "Operator Mono Lig Book Italic"
-font-family-bold-italic = "Operator Mono Lig Book Italic"
+font-family-italic = "Operator Mono Book Italic"
+font-family-bold-italic = "Operator Mono Book Italic"
 
 font-size = 15
 
@@ -23,3 +23,8 @@ shell-integration-features = ssh-env
 
 window-height = 50
 window-width = 168
+
+unfocused-split-opacity = 1
+split-divider-color = #1e242e
+
+auto-update-channel = tip

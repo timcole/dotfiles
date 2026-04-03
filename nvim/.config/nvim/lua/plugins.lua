@@ -80,7 +80,7 @@ return require('packer').startup(function(use)
       })
     end
   }
-  
+
   use 'ray-x/guihua.lua'
   use 'ray-x/go.nvim'
 

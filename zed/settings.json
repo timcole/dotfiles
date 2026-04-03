@@ -7,20 +7,38 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "use_system_window_tabs": false,
+  "bottom_dock_layout": "contained",
+  "diff_view_style": "split",
+  "edit_predictions": {
+    "mode": "subtle"
+  },
+  "toolbar": {
+    "code_actions": false,
+  },
+  "minimap": {
+    "show": "never",
+  },
+  "gutter": {
+    "min_line_number_digits": 4,
+  },
+  "sticky_scroll": {
+    "enabled": false,
+  },
   "disable_ai": false,
   "show_wrap_guides": true,
-  "show_edit_predictions": false,
+  "show_edit_predictions": true,
   "icon_theme": {
     "mode": "system",
     "dark": "Material Icon Theme",
-    "light": "Material Icon Theme"
+    "light": "Material Icon Theme",
   },
   "confirm_quit": true,
   "vim_mode": true,
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Modest Dark"
+    "dark": "Modest Dark",
   },
   "ui_font_size": 16,
   "ui_font_family": "Operator Mono Lig",
@@ -28,33 +46,68 @@
   "buffer_font_family": "Operator Mono Lig",
   "cursor_blink": false,
   "relative_line_numbers": "enabled",
-  "restore_on_startup": "none",
+  "restore_on_startup": "launchpad",
   "ssh_connections": [],
   "scrollbar": { "show": "never" },
   "git": {
+    "hunk_style": "staged_hollow",
     "git_gutter": "tracked_files",
-    "inline_blame": { "enabled": false }
+    "inline_blame": { "enabled": false },
   },
-  "git_panel": { "dock": "bottom" },
-  "indent_guides": { "enabled": false },
+  "git_panel": {
+    "show_count_badge": false,
+    "file_icons": true,
+    "dock": "bottom",
+  },
+  "indent_guides": { "coloring": "fixed", "line_width": 1, "enabled": false },
   "vertical_scroll_margin": 0,
   "remove_trailing_whitespace_on_save": true,
   "show_whitespaces": "all",
   "terminal": {
+    "flexible": false,
     "dock": "right",
     "default_width": 770,
-    "toolbar": { "breadcrumbs": false }
+    "toolbar": { "breadcrumbs": false },
   },
   "agent": {
+    "flexible": false,
+    "tool_permissions": {
+      "tools": {
+        "terminal": {
+          "always_allow": [
+            {
+              "pattern": "^cargo\\s+check(\\s|$)",
+            },
+          ],
+        },
+      },
+    },
+    "default_width": 770,
+    "show_turn_stats": false,
+    "play_sound_when_agent_done": false,
+    "favorite_models": [
+      {
+        "provider": "zed.dev",
+        "model": "claude-opus-4-6",
+        "enable_thinking": false,
+      },
+      {
+        "provider": "zed.dev",
+        "model": "claude-sonnet-4-6",
+        "enable_thinking": false,
+      },
+    ],
+    "default_profile": "write",
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4.1"
+      "effort": "medium",
+      "enable_thinking": true,
+      "provider": "zed.dev",
+      "model": "claude-opus-4-6",
     },
     "button": true,
     "enabled": true,
-    "dock": "right"
+    "dock": "right",
   },
-  "features": { "edit_prediction_provider": "none" },
   "outline_panel": { "default_width": 240 },
   "soft_wrap": "none",
   "wrap_guides": [80],
@@ -62,10 +115,8 @@
   "languages": {
     "Rust": { "tab_size": 2 },
     "TOML": { "tab_size": 2 },
-    "proto": { "tab_size": 2 },
-    "Prisma": { "tab_size": 2 },
     "HCL": { "tab_size": 2 },
-    "YAML": { "format_on_save": "on", "formatter": "prettier" }
+    "YAML": { "format_on_save": "on", "formatter": "prettier" },
   },
   "file_scan_exclusions": [
     "**/.git",
@@ -80,18 +131,40 @@
     "**/.next",
     "**/target",
     "**/dist",
-    "**/node_modules"
+    "**/node_modules",
   ],
   "jupyter": { "enabled": false },
   "project_panel": { "indent_size": 10 },
-  "tab_bar": { "show_nav_history_buttons": false },
-  "tabs": { "file_icons": true },
+  "tab_bar": {
+    "show_tab_bar_buttons": true,
+    "show": true,
+    "show_nav_history_buttons": false,
+  },
+  "tabs": { "git_status": false, "file_icons": true },
   "show_signature_help_after_edits": false,
   "lsp": {
-    "discord_presence": {
-      "initialization_options": {
-        "idle": { "timeout": 1800, "action": "clear_activity" }
-      }
-    }
-  }
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "updateImportsOnFileMove": { "enabled": "always" },
+          "tsserver": { "maxTsServerMemory": 16184 },
+        },
+        "javascript": {
+          "updateImportsOnFileMove": { "enabled": "always" },
+          "tsserver": { "maxTsServerMemory": 16184 },
+        },
+      },
+      "enable_lsp_tasks": true,
+    },
+    "biome": {
+      "settings": {
+        "require_config_file": true,
+        "config_path": "./biome.json",
+      },
+    },
+  },
+  "code_actions_on_format": {
+    "source.fixAll.biome": true,
+    "source.organizeImports.biome": true,
+  },
 }
