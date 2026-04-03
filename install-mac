@@ -1,5 +1,5 @@
 #!/usr/bin/env zsh
-export STOW_FOLDERS="kitty,nvim,scripts,skhd,tmux,zsh,ghostty";
+export STOW_FOLDERS="nvim,scripts,skhd,tmux,zsh,ghostty,zed";
 
 for folder in $(echo $STOW_FOLDERS | sed "s/,/ /g")
 do

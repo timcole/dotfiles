@@ -4,28 +4,28 @@
 
 ---
 
-These are my dotfiles that I use on my MacBook Pro 16" M2 2023
+These are my dotfiles that I use on my MacBook Pro 16" M2 2023, managed with [GNU Stow](https://www.gnu.org/software/stow/).
 
 ```
-OS: macOS
+OS: macOS Tahoe
 Shell: zsh
-Resolution: 2560x1440, 1440x2560
-Terminal: kitty, tmux
+Terminal: ghostty
+Editor: zed
 CPU: Apple M2 Max
 GPU: Apple M2 Max
-Memory: 32GiB
+Memory: 32 GiB
+Display: 5120x2880, 2880x5120
 ```
 
-I switched to Mac back in September 2019. Before that I was using Arch Linux with i3 [old linux dotfiles](https://github.com/TimothyCole/dotfiles/tree/60e72f47d26eac0b967ee7f93132aa1092a06ffc)
+## What's Inside
 
-|Things I use|What they do|
-|-|-|
-|[skhd](https://github.com/koekeishiya/skhd)|Hotkey Daemon|
-|[kitty](https://github.com/kovidgoyal/kitty)|Terminal emulator|
-|[zsh](https://github.com/ohmyzsh/ohmyzsh)|Terminal Shell|
-|[neovim](https://github.com/neovim/neovim)|Code Editor|
-
----
-
-![](https://t.pics/86opGDJpoKQ.png)
-![](https://t.pics/setup.png)
+| Directory | Description |
+| --- | --- |
+| `ghostty/` | [Ghostty](https://ghostty.org) terminal config |
+| `zed/` | [Zed](https://zed.dev) editor config |
+| `tmux/` | [tmux](https://github.com/tmux/tmux) config |
+| `zsh/` | Zsh config with Oh-My-Zsh, aliases, and shell integrations (fzf, fnm, bun, 1Password) |
+| `git/` | Git config — GPG commit signing, global ignores |
+| `skhd/` | skhd hotkey config |
+| `scripts/` | Utility scripts — GPG wrapper, screenshot uploader (Cloudflare R2) |
+| `Brewfile` | Homebrew bundle with all packages, casks, and Mac App Store apps |
