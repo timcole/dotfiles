@@ -7,11 +7,22 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "agent_servers": {
+    "claude": {
+      "default_mode": "acceptEdits",
+      "command": "/Users/tim/.local/state/fnm_multishells/95416_1775791051469/bin/claude-agent-acp",
+      "type": "custom",
+      "args": [],
+    },
+  },
+  "collaboration_panel": {
+    "dock": "right",
+  },
   "use_system_window_tabs": false,
   "bottom_dock_layout": "contained",
   "diff_view_style": "split",
   "edit_predictions": {
-    "mode": "subtle"
+    "mode": "subtle",
   },
   "toolbar": {
     "code_actions": false,
@@ -84,7 +95,7 @@
     },
     "default_width": 770,
     "show_turn_stats": false,
-    "play_sound_when_agent_done": false,
+    "play_sound_when_agent_done": "never",
     "favorite_models": [
       {
         "provider": "zed.dev",
@@ -102,13 +113,13 @@
       "effort": "medium",
       "enable_thinking": true,
       "provider": "zed.dev",
-      "model": "claude-opus-4-6",
+      "model": "claude-sonnet-4-6",
     },
     "button": true,
     "enabled": true,
     "dock": "right",
   },
-  "outline_panel": { "default_width": 240 },
+  "outline_panel": { "dock": "right", "default_width": 240 },
   "soft_wrap": "none",
   "wrap_guides": [80],
   "tab_size": 2,
@@ -134,7 +145,7 @@
     "**/node_modules",
   ],
   "jupyter": { "enabled": false },
-  "project_panel": { "indent_size": 10 },
+  "project_panel": { "dock": "left", "indent_size": 10 },
   "tab_bar": {
     "show_tab_bar_buttons": true,
     "show": true,
