@@ -1,14 +1,9 @@
-local lsp = require('lspconfig')
 local cmp = require('cmp')
 local luasnip = require('luasnip')
 
-local defaults = lsp.util.default_config
-
-defaults.capabilities = vim.tbl_deep_extend(
-  'force',
-  defaults.capabilities,
-  require('cmp_nvim_lsp').default_capabilities()
-)
+vim.lsp.config('*', {
+  capabilities = require('cmp_nvim_lsp').default_capabilities()
+})
 
 vim.api.nvim_create_autocmd('LspAttach', {
   desc = 'LSP actions',
@@ -23,7 +18,6 @@ vim.api.nvim_create_autocmd('LspAttach', {
     bufmap("n", "<C-k>", function() vim.lsp.buf.hover() end)
 
     local client = vim.lsp.get_client_by_id(args.data.client_id)
-
     client.server_capabilities.semanticTokensProvider = nil
   end
 })
@@ -32,28 +26,27 @@ vim.opt.completeopt = {'menuone', 'noselect'}
 
 require("mason").setup()
 require("mason-lspconfig").setup({
-  ensure_installed = { "tsserver", "rust_analyzer", "tailwindcss", "gopls" },
+  ensure_installed = { "ts_ls", "rust_analyzer", "tailwindcss", "gopls" },
+  automatic_enable = true,
 })
 
-lsp.rust_analyzer.setup{
-  procMacro = {
-    enable = true
+vim.lsp.config['ts_ls'] = {
+  root_markers = { "package.json" },
+}
+
+vim.lsp.config['denols'] = {
+  root_markers = { "deno.json", "deno.jsonc" },
+}
+
+vim.lsp.config['rust_analyzer'] = {
+  settings = {
+    ["rust-analyzer"] = {
+      procMacro = { enable = true },
+    }
   }
 }
-lsp.tsserver.setup {
-  on_attach = on_attach,
-  root_dir = lsp.util.root_pattern("package.json")
-}
-lsp.denols.setup {
-  on_attach = on_attach,
-  root_dir = lsp.util.root_pattern("deno.json", "deno.jsonc")
-}
-lsp.graphql.setup{}
-lsp.dockerls.setup{}
-lsp.prismals.setup{}
-lsp.tailwindcss.setup{}
-lsp.bufls.setup{}
-lsp.omnisharp.setup{}
+
+vim.lsp.enable({ 'ts_ls', 'denols', 'rust_analyzer', 'tailwindcss', 'gopls' })
 
 require('luasnip.loaders.from_vscode').lazy_load()
 cmp.setup({

@@ -31,7 +31,6 @@ return require('packer').startup(function(use)
     end
   }
 
-  use 'nvim-lua/popup.nvim'
   use 'nvim-lua/plenary.nvim'
   use 'nvim-telescope/telescope.nvim'
   use {
@@ -52,12 +51,9 @@ return require('packer').startup(function(use)
     }
   }
   use 'saadparwaiz1/cmp_luasnip'
-  use 'jose-elias-alvarez/null-ls.nvim'
-  use 'MunifTanjim/prettier.nvim'
 
   use 'folke/todo-comments.nvim'
 
-  use 'rust-lang/rust.vim'
   use "sindrets/diffview.nvim"
 
   use {
@@ -81,17 +77,6 @@ return require('packer').startup(function(use)
     end
   }
 
-  use 'ray-x/guihua.lua'
-  use 'ray-x/go.nvim'
-
-  use 'pantharshit00/vim-prisma'
-
-  use {
-    "ellisonleao/glow.nvim",
-    config = function() require("glow").setup() end
-  }
-
-  use 'andweeb/presence.nvim'
   use {
     'akinsho/bufferline.nvim',
     tag = "v3.*",
@@ -106,7 +91,6 @@ return require('packer').startup(function(use)
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
   }
-  use 'williamboman/nvim-lsp-installer'
 
   use {
     "windwp/nvim-autopairs",

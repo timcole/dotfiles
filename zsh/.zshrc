@@ -52,3 +52,4 @@ eval "$(op completion zsh)"; compdef _op op
 
 autoload -U compinit && compinit
 
+export PATH="/opt/homebrew/opt/libpq@17/bin:$PATH"
